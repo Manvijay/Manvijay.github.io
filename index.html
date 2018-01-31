@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css\stylesheet1.css">
   <link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css">
   <title> Manvijay </title>
-  <link rel="icon" href="manvijay.png" sizes="1*1" type="image/png">
+  <link rel="icon" href="manvijay.png" type="image/png">
 </head>
 
 <body>
@@ -21,9 +21,9 @@
               <a id="banner" class="a" href="#homePage" >
                 <img src="manvijay.png" style="width:25px;height:20px;margin-right:25px"></img>
               </a>
-            <li><a class="a" href="#">About Me</a> |</li>
+            <li><a class="a" href="#aboutMe">About Me</a> |</li>
             <li><a class="a" href="#particles-js">Projects</a> |</li>
-            <li><a class="a" href="resume.pdf">Resume </a> |</li>
+            <li><a class="a" href="resume.pdf" target="blank" fullscreen="yes">Resume </a> |</li>
             <li><a class="a" href="#">Gallery</a> |</li>
           </ul>
 
@@ -58,79 +58,93 @@
           </div-->
       </div>
 
-<div class="container-fluid" id="particles-js">
-  <div id="projects">
-    <h1> My Projects </h1>
-    <div class="row d-flex">
-      <div class="col-md-3 d-flex">
-        <div class="card">
-          <img src="c++-logo.jpg" class="img-fluid" width="100%">
-          <div class="card-title">
-            <h3> Movie Ticketing System </h3>
-          </div>
-          <div class="card-description">
-            A C++ program which automates the ticketing system of a
-            Movie Theatre.
-          </div> <!--card-description ends here-->
-        </div>  <!--card ends here-->
-      </div>  <!--column ends here-->
-      <div class="col-md-3 d-flex">
-        <div class="card">
-          <img src="java-logo.jpg"  class="img-fluid" width="100%" >
-          <div class="card-title">
-            <h3> Interpreter </h3>
-          </div>
-          <div class="card-description">
-            Built interpreter in two languages to compare the pros and cons.
-          </div>
+      <div class="container-fluid" id="particles-js">
+        <div id="projects">
+          <h1> My Projects </h1>
+          <div class="row d-flex">
+            <div class="col-md-3 d-flex">
+              <div class="card">
+                <img src="c++-logo.jpg" class="img-fluid" width="100%">
+                <div class="card-title">
+                  <h3> Movie Ticketing System </h3>
+                </div>
+                <div class="card-description">
+                  A C++ program which automates the ticketing system of a
+                  Movie Theatre.
+                </div> <!--card-description ends here-->
+              </div>  <!--card ends here-->
+            </div>  <!--column ends here-->
+            <div class="col-md-3 d-flex">
+              <div class="card">
+                <img src="java-logo.jpg"  class="img-fluid" width="100%" >
+                <div class="card-title">
+                  <h3> Interpreter </h3>
+                </div>
+                <div class="card-description">
+                  Built interpreter in two languages to compare the pros and cons.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 d-flex">
+              <div class="card">
+                <img src="postgresql-logo.jpg"  class="img-fluid" width="100%" >
+                <div class="card-title">
+                  <h3> Database Design </h3>
+                </div>
+                <div class="card-description">
+                  Database designing using ER Models and querrying using SQL and SPARQL.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 d-flex">
+              <div class="card">
+                <img src="tensorflow-logo.jpg" class="img-fluid" width="100%" >
+                <div class="card-title">
+                  <h3> Object Tracking </h3>
+                </div>
+                <div class="card-description">
+                  Computer vision and image processing
+                </div> <!--card-description ends here-->
+              </div> <!--card ends here-->
+            </div> <!--4th column ends here-->
+          </div> <!--row ends here-->
+        </div>  <!--projects ends here-->
+      </div>  <!--particles-js ends here-->
+
+
+      <div  id="aboutMe">
+        <div id="imageContainer">
+          <img class="mySlides" src="11.jpg" >
         </div>
-      </div>
-
-      <div class="col-md-3 d-flex">
-        <div class="card">
-          <img src="postgresql-logo.jpg"  class="img-fluid" width="100%" >
-          <div class="card-title">
-            <h3> Database Design </h3>
-          </div>
-          <div class="card-description">
-            Database designing using ER Models and querrying using SQL and SPARQL.
-          </div>
+        <div id="Name">
+          <h1>Manvijay.</h1>
+          <h3 style="padding-top:0px">manvijay@buffalo.edu</h3>
         </div>
-      </div>
+        <div id="aboutMeBox1">
+            <h3 style="position:relative; top:20%;font-family:georgia; color:#85C1E9 ">About Me </h3>
+        </div>
+        <div id="aboutMeBox2">
+          <p style="text-align:justify"> A Senior at State University of New York at
+            Buffalo majoring in Computer Science along with a minor in Mathematics.
+            Loves to strategise and solve problems. An avid soccer fan
+            (Glory Glory Manchester United!) who loves
+            to code. Aside from this website which has HTML,JS and CSS at its core I have
+             done projects in Java, Standard Meta Language, C++, C, Python and
+             MatLab. My projects include but are not limited to the aforementioned
+             ones. My paper on the Automation of Sugarcane Processing Plant which
+             I wrote under the guidance of Prof. Dashrathraj K. Shetty was accepted at
+             MIBSRC 2017. I am going to graduate in December 2018 and and as of now looking for an internship.
+            </p>
+        </div>
+      </div> <!--aboutMe-->
 
-      <div class="col-md-3 d-flex">
-        <div class="card">
-            <img src="tensorflow-logo.jpg" class="img-fluid" width="100%" >
-          <div class="card-title">
-            <h3> Object Tracking </h3>
-          </div>
-          <div class="card-description">
-                Computer vision and image processing
-          </div> <!--card-description ends here-->
-        </div> <!--card ends here-->
-      </div> <!--4th column ends here-->
-   </div> <!--row ends here-->
-  </div>  <!--projects ends here-->
-</div>  <!--particles-js ends here-->
+  </div> <!--wrapper-->
 
-
-      <!--div class="box container-fluid" id="box4">
-          <p style="color:white"> hhhhh<br>jbbjhbj<br>jjjjjjj<br>
-          hhhhh<br>jbbjhbj<br>jjjjjjj<br>hhhhh<br>jbbjhbj<br>jjjjjjj
-          <br>jbbjhbj<br>jjjjjjj<br>hhhhh<br>jbbjhbj<br>jjjjjjj
-          <br>hhhhh<br>jbbjhbj<br>jjjjjjj<br>jbbjhbj<br>jjjjjjj<br>
-          hhhhh<br>jbbjhbj<br>jjjjjjj<br>hhhhh<br>jbbjhbj<br>jjjjjjj
-          <br>jbbjhbj<br>jjjjjjj<br>hhhhh<br>jbbjhbj<br>jjjjjjj
-          <br>hhhhh<br>jbbjhbj<br>jjjjjjj<br>jbbjhbj<br>jjjjjjj<br>
-          hhhhh<br>jbbjhbj<br>jjjjjjj<br>hhhhh<br>jbbjhbj<br>jjjjjjj
-          <br>jbbjhbj<br>jjjjjjj<br>hhhhh<br>jbbjhbj<br>jjjjjjj
-          <br>hhhhh<br>jbbjhbj<br>jjjjjjj</p>
-      </div-->
-   </div> <!--wrapper-->
-
-   <footer style="color:white; text-align:center">
+   <!--footer class="container-fluid" style="color:white; text-align:center">
      &copy; Manvijay Lather
-   </footer>
+   </footer-->
 
       <script type="text/javascript" src="js\particles.min.js"></script>
       <script type="text/javascript" src="js\particles.js"></script>
