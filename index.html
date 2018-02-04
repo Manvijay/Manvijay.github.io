@@ -17,24 +17,25 @@
           <div class="toggle">
               <i class="fa fa-bars"></i>
           </div>
+
           <ul id="nav">
             <li><a id="banner" href="#homePage" >
                 <img src="manvijay.png" ></img>
               <a>
             </li>
             <li><a  href="#aboutMe">About Me</a></li>
-            <li><a  href="#particles-js" >Projects</a></li>
+            <li><a  href="#projects" >Projects</a></li>
+            <li><a  href="#publications">Publications</a></li>
             <li><a  href="resume.pdf" target="blank" fullscreen="yes">Resume </a></li>
             <li><a  href="#">Gallery</a></li>
             <li id="name"> <span><b>Manvijay</b> Lather </span></li>
           </ul>
-
       </nav>
+      <!--Navigation Bar ends here-->
 
 
-      <!--This div has the top most box below navigation bar-->
+      <!--This div has the Home Page, the top most section below navigation bar-->
       <div class="container-fluid" id="homePage">
-          <!--h1 style="color:yellow; margin-bottom:-50px; font-family:comic-sans-ms"> Coming soon......</h1-->
           <div id="image-container">
             <img src="manvijay.png">
           </div>
@@ -42,30 +43,32 @@
           <div class="container-fluid" id="motto" >
             Dream. Believe. Conquer.
           </div>
-          <!--div class="container-fluid" id="social">
+
+          <div class="container-fluid" id="social">
             <a href="https://www.facebook.com/manvijay.lather">
-                <i class="fa fa-facebook-square" style="font-size:42px;color:rgb(50,50,360)"></i>
+                <i class="fa fa-facebook-square"></i>
             </a>
             <a href="https://twitter.com/manvijay007">
-                <i class="fa fa-twitter" style="font-size:42px;color:#3498DB"></i>
+                <i class="fa fa-twitter"></i>
             </a>
             <a href="https://www.instagram.com/manvijaylather/">
-                <i class="fa fa-instagram" style="font-size:42px;color:silver"></i>
+                <i class="fa fa-instagram"></i>
             </a>
             <a href="https://github.com/Manvijay">
-                <i class="fa fa-github" style="font-size:42px;color:grey"></i>
+                <i class="fa fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/manvijay-lather-a07734119">
-                <i class="fa fa-linkedin" style="font-size:42px;color:white;background:#3498DB"></i>
+                <i class="fa fa-linkedin" ></i>
             </a>
-          </div-->
+          </div>
       </div>
+      <!--My homepage ends here-->
 
-
-      <div class="container-fluid" id="particles-js">
-        <div id="projects">
+      <!--This div has My Projects and is just below home page-->
+      <div class="container-fluid" id="projects" style="overflow:hidden;">
+        <div id="particles-js-projects" >
           <div id="titleProjects">
-              My Projects
+              <h2 class="no-span">My Projects</h2>
           </div>
           <div class="row d-flex" id="cardRow">
             <div class="col-md-3 d-flex">
@@ -79,6 +82,7 @@
                 </div> <!--cardDescription ends here-->
               </div>  <!--card ends here-->
             </div>  <!--column ends here-->
+
             <div class="col-md-3 d-flex">
               <div class="card">
                 <img src="java-logo.jpg"  class="img-fluid" >
@@ -103,7 +107,6 @@
               </div>
             </div>
 
-
             <div class="col-md-3 d-flex">
               <div class="card">
                 <img src="tensorflow-logo.jpg" class="img-fluid" width="100%" >
@@ -116,11 +119,24 @@
               </div> <!--card ends here-->
             </div> <!--4th column ends here-->
           </div> <!--row ends here-->
-        </div>  <!--projects ends here-->
-      </div>  <!--particles-js ends here-->
+        </div>  <!--particles-js-projects ends here-->
+      </div>  <!--projects ends here-->
+      <!--Section for my projects ends here-->
 
 
+      <!-- This div has My Publications and is located under My Projects-->
+      <div class="container-fluid" id="publications">
+          <div id="titlePublications">
+            <h2 class="no-span">My Publications</h2>
+            <br>
+            <h4 style="text-align:center; color:grey;"> (coming soon) </h4>
 
+          </div>
+        </div>  <!--publications ends here-->
+      <!--Section for my publications ends here-->
+
+
+      <!--This div has About Me and is located below My Publications-->
       <div  id="aboutMe">
         <div id="aboutMeHeader">
           <div id="imageContainer">
@@ -131,6 +147,7 @@
             <h3 style="padding-top:0px">manvijay@buffalo.edu</h3>
           </div>
         </div><!--aboutMeHeader ends here-->
+
         <div class="container-fluid" id="aboutMeFooter">
           <div class="row">
             <div class="col-md-2" id="aboutMeBox1">
@@ -152,13 +169,17 @@
           </div> <!--row ends here-->
         </div> <!--aboutMeFooter-->
       </div> <!--aboutMe-->
+      <!--Section for About Me ends here-->
 
+
+      <!--This div has the footer of the website-->
+      <footer class="container-fluid">
+        &copy; Manvijay Lather
+      </footer>
+      <!--Footer ends here-->
 
   </div> <!--wrapper-->
 
-   <!--footer class="container-fluid" style="color:white; text-align:center">
-     &copy; Manvijay Lather
-   </footer-->
 
       <script type="text/javascript" src="js\particles.min.js"></script>
       <script type="text/javascript" src="check.js"></script>
