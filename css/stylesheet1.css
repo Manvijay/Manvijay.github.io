@@ -12,7 +12,7 @@ body,html,#wrapper{
   width: 100%;
   margin-bottom: 2px;
   background: #566573;
-  padding: 0px;
+  padding: 5px;
 }
 
 #nav #banner img{
@@ -41,8 +41,10 @@ body,html,#wrapper{
 }
 
 #nav li a:hover{
-  color:#00ff00;
-  text-decoration:none;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 5px 5px 5px 5px;
+   border-bottom: 2px solid black;
 }
 
 .toggle{
@@ -51,7 +53,7 @@ body,html,#wrapper{
 }
 
 #homePage{
-  background: linear-gradient(black, black, black, black, black,grey);
+  background: black;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -82,34 +84,51 @@ body,html,#wrapper{
   margin: -10px;
 }
 
-#particles-js{
+#projects{
   position: relative;
   width: 100%;
   height:100vh;
-  background: linear-gradient(grey,black,black,black,grey);
+  background:url("../projects-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0px;
   margin: 0px;
+  box-shadow: white;
 }
 
-#particles-js #projects{
-  position: absolute;
-  width: 100%;
-  height: 0vh;
-  padding: 40px 0px 0px 0px;
-  margin: 0;
-}
-
-#projects #titleProjects{
+#titleProjects h2.no-span {
   position: relative;
-  top:5vh;
-  color: White;
-  font-size: 56px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  text-align: center;
+  height: 0vh;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 50px;
+  color: white;
+  display: table;
+  white-space: nowrap;
 }
+
+#titleProjects h2.no-span:before,
+#titleProjects h2.no-span:after {
+  border-top: 5px solid white;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 25%;
+}
+
+#titleProjects h2.no-span:before {
+  right: 1.5%;
+}
+
+#titleProjects h2.no-span:after {
+  left: 1.5%;
+}
+
 
 #projects #cardRow{
-  position: relative;
+  position: absolute;
   max-width: 100%;
   padding: 0px 10px 0px 30px;
   top:15vh;
@@ -117,6 +136,7 @@ body,html,#wrapper{
 
 .card{
   position: relative;
+  top:15vh;
   background:silver;
 }
 
@@ -146,13 +166,49 @@ body,html,#wrapper{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#publications{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    background: silver;
+}
+
+#titlePublications h2.no-span {
+  position: relative;
+  font-size: 43px;
+  display: table;
+  white-space: nowrap;
+  height: 0vh;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#titlePublications h2.no-span:before,
+#titlePublications h2.no-span:after {
+  border-top: 5px solid black;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 25%;
+}
+
+#titlePublications h2.no-span:before {
+  right: 1.5%;
+}
+
+#titlePublications h2.no-span:after {
+  left: 1.5%;
+}
+
 #aboutMe{
   position: relative;
   width: 100%;
   height: 100vh;
   padding: 0;
   margin: 0;
-
 }
 
 #aboutMeHeader{
@@ -179,8 +235,7 @@ body,html,#wrapper{
 }
 
 #aboutMeFooter{
-  position:absolute;
-  top:80vh;
+  position:relative;
   height: 20vh;
   width:100%;
   background: red;
@@ -207,8 +262,8 @@ body,html,#wrapper{
 }
 
 #aboutMeBox2{
-  background: grey;
   position: relative;
+  background: grey;
 }
 
 #aboutMeBox2 p{
@@ -218,4 +273,11 @@ body,html,#wrapper{
   transform: translate(-50%, -50%);
   font-size: 15px;
   padding: 10px;
+}
+
+footer{
+  position: relative;
+  color:white;
+  text-align:center;
+  background:black;
 }
