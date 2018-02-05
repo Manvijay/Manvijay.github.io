@@ -13,12 +13,12 @@
 <body>
   <div id="wrapper">
       <!--This section contains the navigation bar-->
-      <nav class=" fixed-top container-fluid">
+      <nav class=" fixed-top container-fluid" id="nav">
           <div class="toggle">
               <i class="fa fa-bars"></i>
           </div>
 
-          <ul id="nav">
+          <ul style="float:left" id="leftNav">
             <li><a id="banner" href="#homePage" >
                 <img src="manvijay.png" ></img>
               <a>
@@ -28,7 +28,14 @@
             <li class="non-banner"><a  href="#publications">Publications</a></li>
             <li class="non-banner"><a  href="resume.pdf" target="blank" fullscreen="yes">Resume </a></li>
             <li class="non-banner"><a  href="#">Gallery</a></li>
-            <li id="name"> <span><b>Manvijay</b> Lather </span></li>
+          </ul>
+
+          <ul style="float:right" id="rightNav">
+            <li id="name"> <b>Manvijay</b> Lather</li>
+            <i class="fa fa-futbol-o"></i>
+            <i class="fa fa-cutlery" ></i>
+            <i class="fa fa-code"></i>
+            <i class="fa fa-repeat fa-spin"></i>
           </ul>
       </nav>
       <!--Navigation Bar ends here-->
@@ -44,7 +51,7 @@
             Dream. Believe. Conquer.
           </div>
 
-          <div class="container-fluid" id="social">
+          <!--div class="container-fluid" id="social" >
             <a href="https://www.facebook.com/manvijay.lather">
                 <i class="fa fa-facebook-square"></i>
             </a>
@@ -60,7 +67,8 @@
             <a href="https://www.linkedin.com/in/manvijay-lather-a07734119">
                 <i class="fa fa-linkedin" ></i>
             </a>
-          </div>
+          </div-->
+
       </div>
       <!--My homepage ends here-->
 
@@ -130,9 +138,24 @@
             <h2 class="no-span">My Publications</h2>
             <br>
             <h4 style="text-align:center; color:grey;"> (coming soon) </h4>
-
           </div>
-        </div>  <!--publications ends here-->
+
+          <div class="container-fluid" id="publicationsBody">
+            <div class="row" style="margin:20px auto">
+              <div class="col1 col-md-2">
+                     <h2>
+                       Automation<br>
+                       Of <br>Sugarcane<br>
+                       Processing Plant
+                     </h2>
+              </div>
+              <div class="col2 col-md-10">
+                    <p> Research Report will be posted shortly. </p>
+              </div>
+            </div>
+          </div>
+
+      </div>  <!--publications ends here-->
       <!--Section for my publications ends here-->
 
 
@@ -143,8 +166,14 @@
             <img class="mySlides" src="11.jpg" ></img>
           </div>
           <div id="Name">
-            <h1>Manvijay.</h1>
+            <h1>Manvijay</h1>
             <h3 style="padding-top:0px">manvijay@buffalo.edu</h3>
+            <div class="container-fluid" id="schedule" >
+              <i class="fa fa-futbol-o"></i>
+              <i class="fa fa-cutlery" ></i>
+              <i class="fa  fa-code"></i>
+              <i class="fa fa-repeat fa-spin"></i>
+            </div>
           </div>
         </div><!--aboutMeHeader ends here-->
 
