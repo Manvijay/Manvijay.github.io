@@ -10,9 +10,18 @@ body,html,#wrapper{
 
 #nav, nav{
   width: 100%;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   background: #566573;
-  padding: 5px;
+  padding-top: 9px;
+}
+
+nav li .schedule{
+  color:black;
+}
+
+nav i:hover{
+  padding: 0px;
+  color: white;
 }
 
 #nav #banner img{
@@ -21,17 +30,9 @@ body,html,#wrapper{
 }
 
 #nav li{
-  color:#808B96;
   display:inline;
   padding: 0px 20px;
   margin: 0px;
-}
-
-#name span{
-  float:right;
-  color:black;
-  padding-right: 20px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #nav li a{
@@ -41,10 +42,12 @@ body,html,#wrapper{
 }
 
 #nav li.non-banner a:hover{
-   font-weight: bold;
-   text-decoration: none;
-   padding: 5px 5px 5px 5px;
-   border-bottom: 2px solid black;
+    color: white;
+    text-decoration: none;
+}
+
+nav li #name{
+  color:black;
 }
 
 .toggle{
@@ -126,7 +129,6 @@ body,html,#wrapper{
   left: 1.5%;
 }
 
-
 #projects #cardRow{
   position: absolute;
   max-width: 100%;
@@ -137,7 +139,8 @@ body,html,#wrapper{
 .card{
   position: relative;
   top:15vh;
-  background:silver;
+  background:white;
+  opacity: 0.7;
 }
 
 .cardTitle h3{
@@ -203,6 +206,34 @@ body,html,#wrapper{
   left: 1.5%;
 }
 
+#publicationsBody .row{
+  position: relative;
+}
+
+#publicationsBody .row .col1{
+  background:black;
+  height: 70vh;
+}
+
+#publicationsBody .row .col1 h2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+}
+
+#publicationsBody .row .col2{
+  background: white;
+}
+
+#publicationsBody .row .col2 p{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
 #aboutMe{
   position: relative;
   width: 100%;
@@ -225,6 +256,15 @@ body,html,#wrapper{
   color:white;
   margin: 0px;
   padding: 0px;
+}
+
+#aboutMeHeader #Name h1{
+  font-size: 63px;
+}
+
+#aboutMeHeader #Name #schedule{
+  font-size: 30px;
+  opacity: 0.6;
 }
 
 #aboutMe #imageContainer img{
