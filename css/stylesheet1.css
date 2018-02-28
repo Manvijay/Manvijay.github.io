@@ -316,7 +316,41 @@ nav i:hover{
 
 footer{
   position: relative;
-  color:white;
-  text-align:center;
-  background:black;
+  height:20vh;
+  background: black;
+  overflow: hidden;
+}
+
+footer .icons{
+  position: absolute;
+  left:50%;
+  top: 40%;
+  font-family: "Comfortaa", cursive;
+  color:silver;
+  transform: translate(-50%,-50%);
+}
+
+.icons i{
+  font-size: 1.8em;
+  padding: 0px 10px;
+}
+
+.icons a{
+  color: grey;
+}
+
+footer i:hover{
+  color: white;
+}
+
+footer #copyright{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: silver;
+  color: black;
+  text-align: center;
 }
