@@ -11,6 +11,7 @@ body,html,#wrapper{
 
 #nav, nav{
   width: 100%;
+  height: 7vh;
   background: #566573;
   padding: 13px 0px 0px 0px;
 }
@@ -33,10 +34,12 @@ nav i:hover{
   display:inline;
   padding: 0px 20px;
   margin: 0px;
+  font-size: 1.1vw;
 }
 
 #nav li a{
   color:#D0D3D4;
+  font-size: 1.1vw;
   padding: 0px;
   margin: 0px;
 }
@@ -79,7 +82,7 @@ nav i:hover{
   text-align: center;
   color: #AED6F1;
   font-family: 'Comfortaa', cursive;
-  font-size: 300%;
+  font-size: 3.5vw;
   padding: -10px;
   margin: -10px;
 }
@@ -103,7 +106,7 @@ nav i:hover{
   left: 50%;
   transform: translate(-50%);
   font-family: 'Comfortaa', cursive;
-  font-size: 50px;
+  font-size: 4vw;
   color: white;
   display: table;
   white-space: nowrap;
@@ -153,7 +156,7 @@ nav i:hover{
 }
 
 .cardDescription i{
-  font-size:32px;
+  font-size:3vw;
   position:relative;
   left:50%;
   transform:translate(-50%);
@@ -178,7 +181,7 @@ nav i:hover{
 
 #titlePublications h2.no-span {
   position: relative;
-  font-size: 43px;
+  font-size: 4vw;
   display: table;
   white-space: nowrap;
   height: 0vh;
@@ -218,6 +221,7 @@ nav i:hover{
   position: absolute;
   left: 50%;
   top: 50%;
+  font-size: 2vw;
   transform: translate(-50%,-50%);
   color:white;
 }
@@ -230,6 +234,7 @@ nav i:hover{
   position: relative;
   left: 50%;
   top: 50%;
+  font-size: 1.2vw;
   transform: translate(-50%,-50%);
 }
 
@@ -258,11 +263,11 @@ nav i:hover{
 }
 
 #aboutMeHeader #Name h1{
-  font-size: 63px;
+  font-size: 4vw;
 }
 
 #aboutMeHeader #Name #schedule{
-  font-size: 30px;
+  font-size: 2vw;
   opacity: 0.6;
 }
 
@@ -310,7 +315,7 @@ nav i:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15px;
+  font-size: 1.1vw;
   padding: 10px;
 }
 
@@ -331,7 +336,7 @@ footer .icons{
 }
 
 .icons i{
-  font-size: 1.8em;
+  font-size: 2vw;
   padding: 0px 10px;
 }
 
