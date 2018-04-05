@@ -1,195 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Julius+Sans+One');
 * {
-  font-family: sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
-body{
-  background: black;
-  width: 100%;
-  height: 100%;
-  padding:0;
-  margin: 0;
-}
-
-
-/*
-.box{
-  width: 100%;
-  height:100vh;
-  margin: 0px;
+body,html,#wrapper{
   background: white;
-  padding: 10px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
-#box2{
-  background:url("../backgroundPic.jpg");
-  padding-top:40px;
-  width:100%;
-  padding-bottom: 10px;
-  overflow:auto;
-  height: 100vh;
-  position: relative;
-}*/
-
-
-#box4{
-  background: rgb(40,40,40);
-  padding-top:10px;
-  padding-bottom: 10px;
-  height: 100vh;
+#nav, nav{
+  width: 100%;
+  height: 7vh;
+  background: #566573;
+  padding: 13px 0px 0px 0px;
 }
 
-
-
-.card{
-    float: left;
-    width: 100%;
-    top:15vh;
-    /*border: 1px solid #ccc;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;*/
-    margin-left: 1.75438%;
-    overflow: hidden;
-    position:relative;
-    opacity:1;
-    background:#212F3D;
-    color:silver;
-
-}
-
-.card:hover {
-  transform: scale3d(1.05, 1.05, 3);
-  opacity:1;
-  background: #D0D3D4;
+nav li .schedule{
   color:black;
-  decoration:none;
-  transition: .5s;
 }
 
-.card-description{
-  margin: 0px 5px 10px 15px;
+nav i:hover{
+  padding: 0px;
+  color: white;
+}
+
+#nav #banner img{
+  width: 25px;
+  height:20px;
+}
+
+#nav li{
+  display:inline;
+  padding: 0px 20px;
+  margin: 0px;
+  font-size: 1.1vw;
+}
+
+#nav li a{
+  color:#D0D3D4;
+  font-size: 1.1vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav li.non-banner a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 
-
-h2,h1{
-  font-family: verdana;
-  padding-top:50px;
-  text-align:center;
-  font-size: 48px;
+.toggle{
+  display:none;
+  float:right;
 }
-
-h3,h4{
-    padding-left: 10px;
-    padding-top: 20px;
-    text-align: center;
-  }
 
 #homePage{
-    background: linear-gradient(black,black,black,black,grey);
-    padding:0;
-    height:100vh;
-    width:100%;
-    top=0;
+  background: black;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0;
 }
 
 #homePage img{
+  position: absolute;
   height: 35vh;
   width: 20%;
   max-width: 100%;
   max-height: 100%;
-  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
-i{
-   color:red;
-   margin-right: 30px;
-   padding:4px;
-}
-
-i:hover{
-  transform: scale3d(1.3, 1.3, 3);
-  opacity:1;
-  transition: .5s;
-  color: white;
-}
-
-#motto{
-    font-size: 300%;
-    padding: -10px;
-    margin: -10px;
-    text-align:center;
-    overflow:hidden;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family:georgia;
-}
-
-#nav, nav{
-   margin:0 auto;
-   position: fixed-top;
-   padding: 10px auto;
-   font-size: 1.1em;
-   background: #566573;
-}
-
-#nav li{
-    font-size: 20;
-    color:#808B96;
-    display: inline;
-}
-
-#nav li a{
-    color:#D0D3D4;
-    text-decoration: none;
-    text-align: left;
-}
-
-#nav li a:hover{
-  /*text-decoration: underline;*/
-  color:#00ff00;
-}
-
-
-#particles-js{
-  background: linear-gradient(0, silver, black);
-  padding:40px 0px 0px 0px;
-  overflow: hidden;
-  height: 100vh;
-  position: relative;
-}
-#projects{
+#homePage #motto{
   position: absolute;
+  top:70vh;
+  max-width: 100%;
+  max-height: 100vh;
+  text-align: center;
+  color: #AED6F1;
+  font-family: 'Comfortaa', cursive;
+  font-size: 3.5vw;
+  padding: -10px;
+  margin: -10px;
 }
 
-#particles-js h1
-{
-  color: #D6EAF8;
-  font-size: 56px;
-  width: 100vw;
-  font-family: georgia;
+#projects{
   position: relative;
-  padding: 30px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height:100vh;
+  background:url("../projects-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: white;
 }
 
-#social{
-   top:70vh;
-   left: 30%;
+#titleProjects h2.no-span {
+  position: relative;
+  height: 0vh;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: 'Comfortaa', cursive;
+  font-size: 4vw;
+  color: white;
+  display: table;
+  white-space: nowrap;
 }
 
-span{
+#titleProjects h2.no-span:before,
+#titleProjects h2.no-span:after {
+  border-top: 5px solid white;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 25%;
+}
+
+#titleProjects h2.no-span:before {
+  right: 1.5%;
+}
+
+#titleProjects h2.no-span:after {
+  left: 1.5%;
+}
+
+#projects #cardRow{
+  position: absolute;
+  max-width: 100%;
+  padding: 0px 10px 0px 30px;
+  top:15vh;
+}
+
+.card{
+  position: relative;
+  top:15vh;
+  background:white;
+  opacity: 0.7;
+}
+
+.cardTitle h3{
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.card img{
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+
+.cardDescription i{
+  font-size:3vw;
+  position:relative;
+  left:50%;
+  transform:translate(-50%);
+}
+
+.card:hover{
+  transform: scale3d(1.08, 1.08, 3);
+  opacity:1;
+  background: white;
+  color:black;
+  transition: .5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#publications{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    background: silver;
+}
+
+#titlePublications h2.no-span {
+  position: relative;
+  font-size: 4vw;
+  display: table;
+  white-space: nowrap;
+  height: 0vh;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#titlePublications h2.no-span:before,
+#titlePublications h2.no-span:after {
+  border-top: 5px solid black;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 25%;
+}
+
+#titlePublications h2.no-span:before {
+  right: 1.5%;
+}
+
+#titlePublications h2.no-span:after {
+  left: 1.5%;
+}
+
+#publicationsBody .row{
+  position: relative;
+}
+
+#publicationsBody .row .col1{
+  background:black;
+  height: 70vh;
+}
+
+#publicationsBody .row .col1 h2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2vw;
+  transform: translate(-50%,-50%);
   color:white;
 }
 
-.toggle {
-  text-align: right;
-  display:none;
+#publicationsBody .row .col2{
+  background: white;
+}
+
+#publicationsBody .row .col2 p{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  font-size: 1.2vw;
+  transform: translate(-50%,-50%);
+}
+
+#aboutMe{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#aboutMeHeader{
+  position: relative;
+  background: black;
+  height: 80vh;
+  width: 100%;
+}
+
+#aboutMeHeader #Name{
+  position: absolute;
+  top:35vh;
+  left:10vw;
+  color:white;
+  margin: 0px;
+  padding: 0px;
+}
+
+#aboutMeHeader #Name h1{
+  font-size: 4vw;
+}
+
+#aboutMeHeader #Name #schedule{
+  font-size: 2vw;
+  opacity: 0.6;
+}
+
+#aboutMe #imageContainer img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#aboutMeFooter{
+  position:relative;
+  height: 20vh;
+  width:100%;
+  background: red;
+  overflow: hidden;
+}
+
+#aboutMe .row{
+  position: relative;
+  height: 20vh;
+  background: white;
+}
+
+#aboutMeBox1{
+  background: rgb(30,30,30);
+  position: relative;
+}
+
+#aboutMeBox1 h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: silver;
+}
+
+#aboutMeBox2{
+  position: relative;
+  background: grey;
+}
+
+#aboutMeBox2 p{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1vw;
+  padding: 10px;
+}
+
+footer{
+  position: relative;
+  height:20vh;
+  background: black;
+  overflow: hidden;
+}
+
+footer .icons{
+  position: absolute;
+  left:50%;
+  top: 40%;
+  font-family: "Comfortaa", cursive;
+  color:silver;
+  transform: translate(-50%,-50%);
+}
+
+.icons i{
+  font-size: 2vw;
+  padding: 0px 10px;
+}
+
+.icons a{
+  color: grey;
+}
+
+footer i:hover{
+  color: white;
+}
+
+footer #copyright{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: silver;
+  color: black;
+  text-align: center;
 }
