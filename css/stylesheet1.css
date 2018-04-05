@@ -4,20 +4,24 @@
 }
 
 body,html,#wrapper{
-  background: white;
   padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background: grey;
+}
+
+ul,li{
+  list-style: none;
   margin: 0px;
 }
 
-#nav, nav{
-  width: 100%;
+nav{
+  position: relative;
+  display: inline-block;
   height: 7vh;
-  background: #566573;
-  padding: 13px 0px 0px 0px;
-}
-
-nav li .schedule{
-  color:black;
+  width: 100%;
+  background-color: rgba(40,40,40,0.8);
 }
 
 nav i:hover{
@@ -26,20 +30,24 @@ nav i:hover{
 }
 
 #nav #banner img{
-  width: 25px;
-  height:20px;
+  width: 2vw;
+  height:4vh;
+}
+
+#rightNav{
+  color: grey;
 }
 
 #nav li{
   display:inline;
   padding: 0px 20px;
   margin: 0px;
-  font-size: 1.1vw;
+  line-height: 7vh;
 }
 
 #nav li a{
   color:#D0D3D4;
-  font-size: 1.1vw;
+  font-size: 0.8em;
   padding: 0px;
   margin: 0px;
 }
@@ -266,7 +274,7 @@ nav i:hover{
   font-size: 4vw;
 }
 
-#aboutMeHeader #Name #schedule{
+#aboutMeHeader #Name #schedule, h3{
   font-size: 2vw;
   opacity: 0.6;
 }
@@ -321,22 +329,21 @@ nav i:hover{
 
 footer{
   position: relative;
-  height:20vh;
+  height:15vh;
   background: black;
   overflow: hidden;
 }
 
 footer .icons{
   position: absolute;
-  left:50%;
   top: 40%;
-  font-family: "Comfortaa", cursive;
-  color:silver;
+  left:50%;
   transform: translate(-50%,-50%);
+  color: grey;
 }
 
 .icons i{
-  font-size: 2vw;
+  font-size: 1.6em;
   padding: 0px 10px;
 }
 
@@ -347,6 +354,7 @@ footer .icons{
 footer i:hover{
   color: white;
 }
+
 
 footer #copyright{
   position: absolute;
