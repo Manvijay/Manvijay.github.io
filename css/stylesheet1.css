@@ -3,7 +3,7 @@
   font-family: 'Comfortaa', cursive;
 }
 
-body,html,#wrapper{
+body,html{
   padding: 0px;
   margin: 0px;
   width: 100%;
@@ -24,39 +24,34 @@ nav{
   background-color: rgba(40,40,40,0.8);
 }
 
-nav i:hover{
-  padding: 0px;
-  color: white;
-}
 
-#nav #banner img{
+.banner>img{
+  display:none;
   width: 2vw;
-  height:4vh;
+  height: 4vh;
 }
 
-#rightNav{
-  color: grey;
-}
-
-#nav li{
-  display:inline;
-  padding: 0px 20px;
-  margin: 0px;
+.NavItem{
   line-height: 7vh;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
-#nav li a{
-  color:#D0D3D4;
+.NavItem a{
+  color: silver;
   font-size: 0.8em;
-  padding: 0px;
-  margin: 0px;
 }
 
-#nav li.non-banner a:hover{
-    color: white;
-    text-decoration: none;
+.NavItem a:hover{
+  color: white;
+  text-decoration: none;
 }
 
+#NavItemRight{
+  color: white
+}
 
 .toggle{
   display:none;
@@ -343,7 +338,7 @@ footer .icons{
 }
 
 .icons i{
-  font-size: 1.6em;
+  font-size: 1.7em;
   padding: 0px 10px;
 }
 
