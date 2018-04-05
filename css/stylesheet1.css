@@ -26,9 +26,12 @@ nav{
 
 
 .banner>img{
-  display:none;
+  position: absolute;
   width: 2vw;
   height: 4vh;
+  top:2vh;
+  left: 65vw;
+  transform: translateX(-50%);
 }
 
 .NavItem{
