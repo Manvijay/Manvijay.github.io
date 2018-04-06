@@ -1,70 +1,17 @@
-@media screen and (max-width:768px){
+@media screen and (max-width:998px){
 
-  .toggle{
-        display:inline-block;
-        float:right;
-        font-size: 30px;
+  #NavItemLeft, #nameNav, .banner{
+      display: none;
+
   }
 
-  .toggle:hover li{
-    display: block;
+  #toggle{
+    display: inline;
   }
 
-  #particles-js{
-    background: black;
-    padding:0;
-    height:100vh;
-    width:100%;
-    top=0;
-    position: auto;
+  #homePage{
+    height: 50vh;
   }
 
-  #image-container img{
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 30vh;
-    width: 50%;
-    position:absolute;
-  }
 
-  #motto{
-    font-size: 150%;
-    top: 70%;
-    left: 50%;
-  }
-
-  #nav li{
-        display: none;
-  }
-
-  #banner{
-       float: left;
-       display: inline;
-  }
-
-}
-
-@media screen and (min-width:769px) and (max-width: 1112px)
-{
-  #motto{
-    font-size: 250%;
-    
-  }
-
-  #image-container img{
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 30vh;
-    width: 40%;
-    position:absolute;
-  }
-}
-
-@media screen and (max-width: 563px)
-{
-  #motto{
-    font-size: 150%;
-  }
 }

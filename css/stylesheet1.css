@@ -3,14 +3,6 @@
   font-family: 'Comfortaa', cursive;
 }
 
-body,html{
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  height: 100vh;
-  background: grey;
-}
-
 ul,li{
   list-style: none;
   margin: 0px;
@@ -56,9 +48,13 @@ nav{
   color: white
 }
 
-.toggle{
-  display:none;
-  float:right;
+
+#toggle{
+  display: none;
+  font-size: 1.3em;
+  line-height: 7vh;
+  vertical-align: middle;
+  color: white;
 }
 
 #homePage{
@@ -66,12 +62,12 @@ nav{
   height: 100vh;
   width: 100%;
   position: relative;
-  padding: 0;
+  padding-top: 7vh;
 }
 
 #homePage img{
   position: absolute;
-  height: 35vh;
+  height: 35%;
   width: 20%;
   max-width: 100%;
   max-height: 100%;
@@ -82,7 +78,7 @@ nav{
 
 #homePage #motto{
   position: absolute;
-  top:70vh;
+  top:70%;
   max-width: 100%;
   max-height: 100vh;
   text-align: center;
