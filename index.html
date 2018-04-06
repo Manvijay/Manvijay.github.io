@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css\stylesheet1.css">
-  <!--link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css"-->
+  <link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css">
   <title> Manvijay </title>
   <link rel="icon" href="manvijay.png" type="image/png">
 </head>
@@ -13,43 +13,13 @@
 <body>
   <div id="wrapper">
       <!--This section contains the navigation bar-->
-      <!--nav class=" fixed-top container-fluid" id="nav">
-          <div class="toggle">
-              <i class="fa fa-bars"></i>
-          </div>
-
-          <ul style="float:left" id="leftNav">
-            <li><a id="banner" href="#homePage" >
-                <img src="manvijay.png" ></img>
-              </a>
-            </li>
-            <li class="non-banner"><a  href="#aboutMe">About Me</a></li>
-            <li class="non-banner"><a  href="#projects" >Projects</a></li>
-            <li class="non-banner"><a  href="#publications">Publications</a></li>
-            <li class="non-banner"><a  href="resume.pdf" target="blank" fullscreen="yes">Resume </a></li>
-            <li class="non-banner"><a  href="#social"> Social Links</a></li>
-          </ul>
-
-          <ul style="float:right" id="rightNav">
-
-            <i class="fa fa-futbol-o"></i>
-            <i class="fa fa-cutlery" ></i>
-            <i class="fa fa-code"></i>
-            <i class="fa fa-repeat fa-spin"></i>
-            <li> <span style="font-weight:900 ; ">Manvijay</span> Lather</li>
-          </ul>
-      </nav>
-
-
-      <!--Navigation Bar ends here-->
 
       <nav class="container-fluid fixed-top">
+
+        <i id="toggle" class="fa fa-bars"></i>
+
         <ul id="NavItemLeft"style="float:left">
-          <li class"NavItem">
-            <a class="banner" href="#homePage" >
-              <img src="manvijay.png" ></img>
-            </a>
-          </li>
+
           <li class="NavItem">
             <a  href="#aboutMe">About Me</a>
           </li>
@@ -67,6 +37,10 @@
           </li>
         </ul>
 
+        <a class="banner" href="#homePage" >
+          <img src="manvijay.png" ></img>
+        </a>
+
         <ul id="NavItemRight"style="float:right">
 
           <li class="NavItem">
@@ -75,9 +49,13 @@
             <i class="fa fa-code"></i>
             <i class="fa fa-repeat fa-spin"></i>
           </li>
-          <li class="NavItem"> Manvijay Lather</li>
+          <li class="NavItem" id="nameNav"> Manvijay Lather</li>
+
         </ul>
       </nav>
+
+
+      <!--Navigation Bar ends here-->
 
 
       <!--This div has the Home Page, the top most section below navigation bar-->
