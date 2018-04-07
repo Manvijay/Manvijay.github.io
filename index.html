@@ -8,6 +8,13 @@
   <link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css">
   <title> Manvijay </title>
   <link rel="icon" href="manvijay.png" type="image/png">
+  <script>
+    function bomb()
+    {
+      alert("Bhaagja Bhosdi ke");
+    }
+
+  </script>
 </head>
 
 <body>
@@ -73,62 +80,84 @@
 
       <!--This div has My Projects and is just below home page-->
       <div class="container-fluid" id="projects" style="overflow:hidden;">
-        <div id="particles-js-projects" >
-          <div id="titleProjects">
-              <h2 class="no-span">My Projects</h2>
+
+        <div id="titleProjects">
+            <h2  class="no-span">My Projects</h1>
+        </div> <!--title ends here-->
+        <div class="container-fluid grid">
+          <div class="card">
+            <img src="tensorflow-logo.jpg">
+            <div id="projectText">
+              <div id="projectTitle">
+                Object Tracker
+              </div>
+              <div id="projectBrief">
+                This is a Hybrid Object Tracking pipeline built using Google's tensorflow and Lucas Kanade tracker.
+              </div>
+            </div>
           </div>
-          <div class="row d-flex" id="cardRow">
-            <div class="col-sm-3 d-flex">
-              <div class="card">
-                <img src="c++-logo.jpg" class="img-fluid" >
-                <div class="cardTitle">
-                  <h3> Movie Ticketing System </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div> <!--cardDescription ends here-->
-              </div>  <!--card ends here-->
-            </div>  <!--column ends here-->
-
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="java-logo.jpg"  class="img-fluid" >
-                <div class="cardTitle">
-                  <h3> Interpreter </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div>
+          <div class="card">
+            <img src="java-logo.jpg">
+            <div id="projectText">
+              <div id="projectTitle">
+                Interpreter
+              </div>
+              <div id="projectBrief">
+                This is an interpreter built in Java and SML capable of reading instructions from a file and executing them.
               </div>
             </div>
-
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="sql-logo.png"  class="img-fluid" >
-                <div class="cardTitle">
-                  <h3>Database-Design </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div>
+          </div>
+          <div class="card">
+            <img src="android-logo.gif">
+            <div id="projectText">
+              <div id="projectTitle">
+                Android Sports App
+              </div>
+              <div id="projectBrief">
+                An android sports app which not only shows live scores and player stats but also has a feature to compare two players based on their stats.
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="tensorflow-logo.jpg" class="img-fluid" width="100%" >
-                <div class="cardTitle">
-                  <h3> Object Tracking </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div> <!--cardDescription ends here-->
-              </div> <!--card ends here-->
-            </div> <!--4th column ends here-->
-          </div> <!--row ends here-->
-        </div>  <!--particles-js-projects ends here-->
+        <div class="container-fluid grid">
+          <div class="card">
+            <img src="c++-logo.jpg">
+            <div id="projectText">
+              <div id="projectTitle">
+                Movie Theatre Ticketing System
+              </div>
+              <div id="projectBrief">
+                A ticketing system built in C++ which let's the user to allot seats and bill tickets for a movie theatre.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="html5-css-javascript-logo.png">
+            <div id="projectText">
+              <div id="projectTitle">
+                Skin-Care Line Website <br>(front end)
+              </div>
+              <div id="projectBrief">
+                This is a front end prototype of the website for Renew Bath and Body (Skin Care Line in Buffalo)
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sql-logo.png">
+            <div id="projectText">
+              <div id="projectTitle">
+                Database Design
+              </div>
+              <div id="projectBrief">
+                This is the structure and design of a social networking website. Coded in PostgreSQL and follows ER Designing principles.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>  <!--projects ends here-->
-      <!--Section for my projects ends here-->
+    </div><!--Section for my projects ends here-->
 
 
       <!-- This div has My Publications and is located under My Projects-->
@@ -140,6 +169,7 @@
           </div>
 
           <div class="container-fluid" id="publicationsBody">
+
             <div class="row" style="margin:20px auto">
               <div class="col1 col-md-2">
                      <h2>
@@ -152,6 +182,7 @@
                     <p> Research Report will be posted shortly. </p>
               </div>
             </div>
+
           </div>
 
       </div>  <!--publications ends here-->
@@ -203,7 +234,7 @@
       <!--This div has the footer of the website-->
       <footer class="container-fluid"  id="social">
         <div class="icons">
-          <span style="font-size: 0.9em">Lets Connect : </span>
+          <span>Lets Connect : </span>
           <a href="https://www.instagram.com/manvijaylather/"><i class="fa fa-instagram"> </i></a>
           <a href="https://github.com/Manvijay"><i class="fa fa-github"></i></a>
           <a href="https://www.linkedin.com/in/manvijay-lather-a07734119"><i class="fa fa-linkedin" ></i></a>
