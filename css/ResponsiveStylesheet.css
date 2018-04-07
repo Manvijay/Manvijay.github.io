@@ -58,3 +58,28 @@
   }
 
 }
+
+@media screen and (max-width:500px){
+  .grid{
+    position: relative;
+    top:15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: auto;
+  }
+
+  .card{
+    position:relative;
+    top: 10%;
+    height: 40vh;
+    text-align: center;
+    padding: auto;
+    margin: 10px;
+  }
+
+  #publicationsBody .row{
+    position: relative;
+    height:70vh;
+  }
+
+}
