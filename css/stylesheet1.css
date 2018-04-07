@@ -92,13 +92,66 @@ nav{
 #projects{
   position: relative;
   width: 100%;
-  height:100vh;
+  height: auto;
   background:url("../projects-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 0px;
   margin: 0px;
-  box-shadow: white;
+}
+
+.grid{
+  position: relative;
+  top:15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vh;
+}
+
+.card{
+  position:relative;
+  top: 10%;
+  height: 50vh;
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card img{
+  position: relative;
+  width:100%;
+  height: 70%;
+}
+
+#projectText{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 20px;
+  margin: auto;
+}
+
+#projectTitle{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: auto;
+  padding: 2px;
+}
+
+#projectBrief{
+  display:flex;
+  align-items:stretch;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+
+#titleProjects{
+  margin-bottom: 13vh;
+  width: 100vw;
 }
 
 #titleProjects h2.no-span {
@@ -130,47 +183,6 @@ nav{
 
 #titleProjects h2.no-span:after {
   left: 1.5%;
-}
-
-#projects #cardRow{
-  position: absolute;
-  max-width: 100%;
-  padding: 0px 10px 0px 30px;
-  top:15vh;
-}
-
-.card{
-  position: relative;
-  top:15vh;
-  background:white;
-  opacity: 0.7;
-}
-
-.cardTitle h3{
-  text-align: center;
-  font-family: 'Didact Gothic', sans-serif;
-}
-
-.card img{
-  position: relative;
-  height: 200px;
-  width: 100%;
-}
-
-.cardDescription i{
-  font-size:3vw;
-  position:relative;
-  left:50%;
-  transform:translate(-50%);
-}
-
-.card:hover{
-  transform: scale3d(1.08, 1.08, 3);
-  opacity:1;
-  background: white;
-  color:black;
-  transition: .5s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #publications{
@@ -212,19 +224,19 @@ nav{
 
 #publicationsBody .row{
   position: relative;
+  height:50vh;
 }
 
 #publicationsBody .row .col1{
   background:black;
-  height: 70vh;
 }
 
 #publicationsBody .row .col1 h2{
-  position: absolute;
-  left: 50%;
+  position: relative;
   top: 50%;
   font-size: 2vw;
-  transform: translate(-50%,-50%);
+  transform: translateY(-50%);
+  text-align: center;
   color:white;
 }
 
@@ -234,10 +246,10 @@ nav{
 
 #publicationsBody .row .col2 p{
   position: relative;
-  left: 50%;
   top: 50%;
   font-size: 1.2vw;
-  transform: translate(-50%,-50%);
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 #aboutMe{
@@ -300,10 +312,11 @@ nav{
 }
 
 #aboutMeBox1 h3{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   color: silver;
 }
 
@@ -328,12 +341,21 @@ footer{
   overflow: hidden;
 }
 
+#social{
+  position: relative;
+}
+
+#social span{
+  position:relative;
+  style="font-size: 0.9em"
+}
+
 footer .icons{
-  position: absolute;
+  position: relative;
   top: 40%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  transform: translateY(-50%);
   color: grey;
+  text-align: center;
 }
 
 .icons i{
