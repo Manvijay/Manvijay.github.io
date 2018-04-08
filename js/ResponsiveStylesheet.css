@@ -1,0 +1,121 @@
+@media screen and (max-width:1109px){
+  .grid{
+    position: relative;
+    top:15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3vw;
+    grid-row-gap: 1vh;
+  }
+
+  .card{
+    position:relative;
+    top: 10%;
+    height: 40vh;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    text-align: center;
+  }
+
+  #projectText{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    margin: auto;
+  }
+
+  #projectBrief{
+    display: none;
+  }
+
+  #projectName{
+
+  }
+
+  #publicationsBody .row{
+    position: relative;
+    height:70vh;
+  }
+
+}
+
+@media screen and (max-width:998px){
+
+  #NavItemLeft, #nameNav, .banner{
+      display: none;
+
+  }
+
+  #toggle{
+    display: inline;
+  }
+
+  #homePage{
+    height: 70vh;
+  }
+
+
+}
+
+@media screen and (max-width:550px){
+
+  html,body{
+    min-height: 100%;
+  }
+
+  #homePage{
+      height: 70vh;
+    }
+
+  .grid{
+    position: relative;
+    top:15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: auto;
+  }
+
+  .card{
+    position:relative;
+    top: 10%;
+    height: 40vh;
+    text-align: center;
+    padding: auto;
+    margin: 10px;
+  }
+
+  #projectBrief{
+    display: block;
+    font-size: 0.8em;
+  }
+
+  #publicationsBody .row{
+    position: relative;
+    height:70vh;
+  }
+
+  #aboutMeBox2 p{
+    font-size: 0.45em;
+  }
+
+  #aboutMeHeader{
+    height: 50vh
+  }
+
+  footer{
+    position: relative;
+    height:35vh;
+    background: black;
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width:430px){
+
+  #projectBrief{
+    font-size: 0.58em;
+  }
+
+}
