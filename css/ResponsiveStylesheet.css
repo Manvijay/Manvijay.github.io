@@ -60,7 +60,7 @@
 
 @media screen and (max-width:550px){
 
-  body,html{
+  body,#wrapper{
     overflow-x:hidden;
   }
   
