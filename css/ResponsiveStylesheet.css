@@ -60,6 +60,10 @@
 
 @media screen and (max-width:550px){
 
+  body,html{
+    overflow-x:hidden;
+  }
+  
   #homePage{
       height: 70vh;
     }
