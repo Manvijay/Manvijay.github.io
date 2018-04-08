@@ -60,10 +60,6 @@
 
 @media screen and (max-width:550px){
 
-  html,body{
-    min-height: 100%;
-  }
-
   #homePage{
       height: 70vh;
     }
