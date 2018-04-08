@@ -25,8 +25,8 @@ nav{
 
 .banner>img{
   position: absolute;
-  width: 2vw;
-  height: 4vh;
+  max-width: 2vw;
+  max-height: 4vh;
   top:2vh;
   left: 65vw;
   transform: translateX(-50%);
@@ -73,10 +73,8 @@ nav{
 
 #homePage img{
   position: absolute;
-  height: 35%;
-  width: 20%;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 40%;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
