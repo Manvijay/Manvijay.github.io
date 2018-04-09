@@ -42,13 +42,21 @@
 
 @media screen and (max-width:998px){
 
-  #NavItemLeft, #nameNav, .banner{
+  #NavItemLeft, #nameNav{
       display: none;
+  }
 
+  .banner>img{
+    position: absolute;
+    max-width: 4vw;
+    max-height: 6vh;
+    top:2vh;
+    left: 4vw;
+    transform: translateX(-50%);
   }
 
   #toggle{
-    display: inline;
+    display: none;
   }
 
   #homePage{
@@ -61,9 +69,9 @@
 @media screen and (max-width:550px){
 
   body,#wrapper{
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
-  
+
   #homePage{
       height: 70vh;
     }
@@ -110,6 +118,16 @@
     overflow: hidden;
   }
 
+  #social span{
+    position:relative;
+    font-size: 3vw;
+  }
+
+  .icons i{
+    font-size: 5vw;
+    padding: 0px 10px;
+  }
+
 }
 
 @media screen and (max-width:430px){
@@ -117,5 +135,18 @@
   #projectBrief{
     font-size: 0.58em;
   }
+
+  #imageBig{
+    display: none;
+  }
+
+  #imageSmall{
+    display: block;
+  }
+
+  #aboutMeBox2 p{
+    font-size: 1.4vw;
+  }
+
 
 }
