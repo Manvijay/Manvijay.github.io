@@ -317,7 +317,6 @@ nav{
 #aboutMe .row{
   position: relative;
   height: 20vh;
-  background: white;
 }
 
 #aboutMeBox1{
@@ -336,7 +335,7 @@ nav{
 
 #aboutMeBox2{
   position: relative;
-  background: grey;
+  background: silver;
 }
 
 #aboutMeBox2 p{
