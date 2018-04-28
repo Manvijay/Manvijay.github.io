@@ -33,9 +33,30 @@
 
   }
 
-  #publicationsBody .row{
+  #publicationsBody{
     position: relative;
-    height:70vh;
+    height:75vh;
+    width: 100%;
+    padding: 0;
+    margin: 4vh 0;
+  }
+
+  #publicationsBody .col1 #titleBlock h2{
+    font-size: 3vw;
+    color:white;
+  }
+
+  #publicationsBody .col1 a{
+    color: grey;
+    font-size: 2vw;
+  }
+
+  #publicationsBody .col2 p{
+    position: relative;
+    top: 50%;
+    font-size: 2vw;
+    transform: translateY(-50%);
+    text-align: justify;
   }
 
 }
@@ -62,6 +83,37 @@
   #homePage{
     height: 70vh;
   }
+
+  #publications{
+      position:relative;
+      width: 100%;
+    }
+
+    #publicationsBody{
+      position: relative;
+      height:75vh;
+      width: 100%;
+      padding: 0;
+      margin: 4vh 0;
+    }
+
+    #publicationsBody .col1 #titleBlock h2{
+      font-size: 3vw;
+      color:white;
+    }
+
+    #publicationsBody .col1 a{
+      color: grey;
+      font-size: 1.5vw;
+    }
+
+    #publicationsBody .col2 p{
+      position: relative;
+      top: 50%;
+      font-size: 2vw;
+      transform: translateY(-50%);
+      text-align: justify;
+    }
 
 
 }
@@ -98,9 +150,30 @@
     font-size: 0.8em;
   }
 
-  #publicationsBody .row{
+  #publicationsBody{
     position: relative;
-    height:70vh;
+    height:75vh;
+    width: 100%;
+    padding: 0;
+    margin: 4vh 0;
+  }
+
+  #publicationsBody .col1 #titleBlock h2{
+    font-size: 6vw;
+    color:white;
+  }
+
+  #publicationsBody .col1 a{
+    color: grey;
+    font-size: 3vw;
+  }
+
+  #publicationsBody .col2 p{
+    position: relative;
+    top: 50%;
+    font-size: 2vw;
+    transform: translateY(-50%);
+    text-align: justify;
   }
 
   #aboutMeBox2 p{
@@ -135,6 +208,33 @@
   #projectBrief{
     font-size: 0.58em;
   }
+
+  #publicationsBody{
+    position: relative;
+    height:75vh;
+    width: 100%;
+    padding: 0;
+    margin: 4vh 0;
+  }
+
+  #publicationsBody .col1 #titleBlock h2{
+    font-size: 6vw;
+    color:white;
+  }
+
+  #publicationsBody .col1 a{
+    color: grey;
+    font-size: 2vw;
+  }
+
+  #publicationsBody .col2 p{
+    position: relative;
+    top: 50%;
+    font-size: 2vw;
+    transform: translateY(-50%);
+    text-align: justify;
+  }
+
 
   #imageBig{
     display: none;
