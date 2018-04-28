@@ -1,274 +1,199 @@
-<!DOCTYPE HTML>
-<HTML>
-<head>
-  <meta name="viewport" content="width= device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css\stylesheet1.css">
-  <link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css">
-  <title> Manvijay </title>
-  <link rel="icon" href="manvijay.png" type="image/png">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css\renewStyle.css">
+    <link rel="stylesheet" type="text/css" href="css\magnific.css">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js\generalJS.js"></script>
+    <script src="js\custom.js"></script>
+    <script src="js\instafeed.min.js"></script>
+    <script src="js\instafeed.js"></script>
+    <script src="js\magnific.min.js"></script>
 
-</head>
+    <title> Renew Bath and Body </title>
+    <link rel="icon" href="images\logo.jpg" type="image">
+  </head>
+  <body style="background:grey;">
 
-<body>
-  <div id="wrapper">
-      <!--This section contains the navigation bar-->
+    <nav class="container-fluid fixed-top">
+      <ul id="CategoryLeft"style="float:left">
+        <li class="Category">
+          <a  href="#">Face </a>
+          <ul class="SubCategories">
+            <div>
+              <li> Face Sub Category 1</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div>
+            <div>
+              <li>Face Sub Category 2</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div><div>
+              <li>Face Sub Category 3</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div><div>
+              <li> Face Sub Category 4</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div>
+          </ul>
+        </li>
+        <li class="Category">
+          <a href="#"> Body </a>
+        </li>
+        <li class="Category">
+          <a href="#"> Bath </a>
+        </li>
+        <li class="Category">
+          <a href="#"> Make-Up </a>
+        </li>
+      </ul>
+      <li>
+        <a class="banner" href="#topImageSlider" >
+          <img src="images\logo.jpg" ></img> </a>
+      </li>
+      <ul id="CateforyRight"style="float:right">
+        <li class="Category">
+          <a href="#"> Men </a>
+        </li>
+        <li class="Category">
+          <a href="#"> Aromas </a>
+        </li>
+        <li class="Category">
+          <a  href="#">About Us </a>
+        </li>
+        <li class="Category">
+          <a href="#"> Brands </a>
+        </li>
+      </ul>
+    </nav>
 
-      <nav class="container-fluid fixed-top topNav">
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i id="toggle" onclick="myFunction()" class="fa fa-bars"></i>
-        </a>
-
-        <ul id="NavItemLeft"style="float:left">
-
-          <li class="NavItem">
-            <a  href="#aboutMe">About Me</a>
-          </li>
-          <li class="NavItem">
-            <a  href="#projects">Projects</a>
-          </li>
-          <li class="NavItem">
-            <a  href="#publications">Publications</a>
-          </li>
-          <li class="NavItem">
-            <a  href="resume.pdf" target="blank" fullscreen="yes">Resume</a>
-          </li>
-          <li class="NavItem">
-            <a  href="#social">Social Links</a>
-          </li>
-        </ul>
-
-        <a class="banner" href="#homePage" >
-          <img src="manvijay.png" ></img>
-        </a>
-
-        <ul id="NavItemRight"style="float:right">
-
-          <li class="NavItem">
-            <i class="fa fa-futbol-o"></i>
-            <i class="fa fa-cutlery" ></i>
-            <i class="fa fa-code"></i>
-            <i class="fa fa-repeat fa-spin"></i>
-          </li>
-          <li class="NavItem" id="nameNav"> Manvijay Lather</li>
-
-        </ul>
-      </nav>
+<!--****************************Nav Bar ends here*****************************************************-->
+  <!--style>
+    #test:hover{
+      width: 100px;
+      transition-delay: 2s;
+    }
+  </style>
+    <div id="test" style="width: 20px; height: 50px; background-color:red; position:relative">
+      mm
+    </div-->
 
 
-      <!--Navigation Bar ends here-->
-
-
-      <!--This div has the Home Page, the top most section below navigation bar-->
-      <div class="container-fluid" id="homePage">
-          <div id="image-container">
-            <img src="manvijay.png">
+    <div id="popModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Deals from Renew</h4>
           </div>
-
-          <div class="container-fluid" id="motto" >
-            Dream. Believe. Conquer.
+          <  <div class="modal-body" style="position:relative;text-align:center;top:10%">
+              <h3> I will insert a button here.<br> Click that and get good Deals!</h3>
+              <i class="fa fa-envelope" style="font-size:1.8em"> </i>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
+        </div>
 
       </div>
-      <!--My homepage ends here-->
+    </div>
 
-      <!--This div has My Projects and is just below home page-->
-      <div class="container-fluid" id="projects" style="overflow:hidden;">
 
-        <div id="titleProjects">
-            <h2  class="no-span">My Projects</h1>
-        </div> <!--title ends here-->
-        <div class="container-fluid grid">
-          <div class="card">
-            <img src="tensorflow-logo.jpg">
-            <div id="projectText">
-              <div id="projectName">
-                <a href="https://github.com/Manvijay/Object-tracking">
-                  Object Tracker
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-              <div id="projectBrief">
-                This is a Hybrid Object Tracking pipeline built using Google's tensorflow and Lucas Kanade tracker.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="java-logo.jpg">
-            <div id="projectText">
-              <div id="projectName">
-                <a href="https://github.com/Manvijay/Interpreter">
-                  Interpreter
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-              <div id="projectBrief">
-                This is an interpreter built in Java and SML capable of reading instructions from a file and executing them.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="android-logo.gif">
-            <div id="projectText">
-              <div id="projectName">
-                <a href="https://github.com/Manvijay/stats-o-score">
-                  Android Sports App
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-              <div id="projectBrief">
-                An android sports app which not only shows live scores and player stats but also has a feature to compare two players based on their stats.
-              </div>
-            </div>
-          </div>
+
+
+
+<!--*********************This is section with image slider**********************************************************-->
+
+    <div class="container-fluid" id="topImageSlider">
+      <figure>
+        <div id="imageContainer">
+          <img src="images\image1.jpg">
+        </div>
+        <div id="imageContainer">
+          <img src="images\image2.jpg">
+        </div>
+        <div id="imageContainer">
+          <img src="images\image3.jpg">
+        </div>
+        <div id="imageContainer">
+          <img src="images\image4.jpg">
+        </div>
+        <div id="imageContainer">
+          <img src="images\image5.jpg">
         </div>
 
-        <div class="container-fluid grid">
+      </figure>
+    </div>
+
+<!--*********************image slider ends**********************************************************-->
+
+<!--*********************This is section with grid of 4 cells**********************************************************-->
+    <div class="container-fluid" id="seasons">
+      <div class="grid-container-3">
+        <div class="grid-item">
           <div class="card">
-            <img src="c++-logo.jpg">
-            <div id="projectText">
-              <div id="projectName">
-                <a href="">
-                  Movie Theatre Ticketing System
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-              <div id="projectBrief">
-                A ticketing system built in C++ which let's the user to allot seats and bill tickets for a movie theatre.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="html5-css-javascript-logo.png">
-            <div id="projectText">
-              <div id="projectName">
-                <a href="https://github.com/Manvijay/renewbathandbody">
-                  Skin-Care Line Website <br>(front end)
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-              <div id="projectBrief">
-                This is a front end prototype of the website for Renew Bath and Body (Skin Care Line in Buffalo).
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="sql-logo.png">
-            <div id="projectText">
-              <div id="projectName">
-                <a href="#">
-                  Database Design
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-              <div id="projectBrief">
-                This is the structure and design of a social networking website. Coded in PostgreSQL and follows ER Designing principles.
-              </div>
-            </div>
+            Summer Special
           </div>
         </div>
-
-      </div>  <!--projects ends here-->
-    </div><!--Section for my projects ends here-->
-
-
-      <!-- This div has My Publications and is located under My Projects-->
-      <div class="container-fluid" id="publications">
-          <div id="titlePublications">
-            <h2 class="no-span">My Publications</h2>
-            <br>
-            <h4 style="text-align:center; color:grey; font-size:2vw"> (coming soon) </h4>
+        <div class="grid-item">
+          <div class="card">
+            Spring Special
           </div>
-
-          <div class="container-fluid" id="publicationsBody">
-
-            <div class="row" style="margin:20px auto">
-              <div class="col1 col-md-2">
-                     <h2>
-                       Automation<br>
-                       Of <br>Sugarcane<br>
-                       Processing Plant
-                     </h2>
-              </div>
-              <div class="col2 col-md-10">
-                    <p> Research Report will be posted shortly. </p>
-              </div>
-            </div>
-
-          </div>
-
-      </div>  <!--publications ends here-->
-      <!--Section for my publications ends here-->
-
-
-      <!--This div has About Me and is located below My Publications-->
-      <div  id="aboutMe">
-        <div id="aboutMeHeader">
-          <div id="imageContainer">
-            <img id="imageBig" class="mySlides" src="11.jpg" ></img>
-            <img id="imageSmall" class="mySlides" src="myPic.jpg" ></img>
-          </div>
-          <div id="Name">
-            <h1>Manvijay</h1>
-            <h3 style="padding-top:0px">manvijay@buffalo.edu</h3>
-            <div class="container-fluid" id="schedule" >
-              <i class="fa fa-futbol-o"></i>
-              <i class="fa fa-cutlery" ></i>
-              <i class="fa  fa-code"></i>
-              <i class="fa fa-repeat fa-spin"></i>
-            </div>
-          </div>
-        </div><!--aboutMeHeader ends here-->
-
-        <div class="container-fluid" id="aboutMeFooter">
-          <div class="row">
-            <div class="col-md-2" id="aboutMeBox1">
-              <h3>About Me </h3>
-            </div>
-            <div class="col-md-10" id="aboutMeBox2">
-              <p style="text-align:justify"> A Senior at State University of New York at
-                Buffalo majoring in Computer Science along with a minor in Mathematics.
-                Loves to strategise and solve problems. An avid soccer fan
-                (Glory Glory Manchester United!) who loves
-                to code. Aside from this website which has HTML,JS and CSS at its core I have
-                done projects in Java, Standard Meta Language, C++, C, Python and
-                MatLab. My projects include but are not limited to the aforementioned
-                ones. My paper on the Automation of Sugarcane Processing Plant which
-                I wrote under the guidance of Prof. Dashrathraj K. Shetty was accepted at
-                MIBSRC 2017. I am going to graduate in December 2018 and and as of now looking for an internship.
-              </p>
-            </div-->
-          </div> <!--row ends here-->
-        </div> <!--aboutMeFooter-->
-      </div> <!--aboutMe-->
-      <!--Section for About Me ends here-->
-
-
-      <!--This div has the footer of the website-->
-      <footer class="container-fluid"  id="social">
-        <div class="icons">
-          <span>Lets Connect : </span>
-          <a href="https://www.instagram.com/manvijaylather/"><i class="fa fa-instagram"> </i></a>
-          <a href="https://github.com/Manvijay"><i class="fa fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/manvijay-lather-a07734119"><i class="fa fa-linkedin" ></i></a>
-          <a href="mailto:manvijay@buffalo.edu"><i class="fa fa-envelope" ></i></a>
         </div>
-        <div class="container-fluid" id="copyright">
-          &copy; Manvijay Lather
+        <div class="grid-item">
+          <div class="card">
+            Fall Special
+          </div>
         </div>
-      </footer>
-      <!--Footer ends here-->
+      </div>
+      <div class="grid-container-2">
+        <div class="grid-item">
+          <div class="card">
+            Winter Special
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            Rain Special
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </div> <!--wrapper-->
+<!--*********************section2 ends here******************************************************-->
+
+<!--***********************Insta feed section of home page starts here**********************************-->
+
+    <div id="instaSection">
+      <h2> Our Instafeed </h2>
+      <div class="container-fluid " id="instafeed">
+      </div>
+    </div>
+
+<!--***************************section 3 ends here***********************************************-->
+
+    <footer class="container-fluid">
+      <div class="icons">
+        <a href="https://twitter.com/renew_bathnbody"><i class="fa fa-twitter"> </i></a>
+        <a href="https://www.facebook.com/renew-bath-and-body-514038992038011/"><i class="fa fa-facebook-square"> </i></a>
+        <a href="https://www.youtube.com/channel/UCRITiy5HMgk6mslQH9fB2nA"><i class="fa fa-youtube"> </i></a>
+        <a href="https://www.instagram.com/renewbathandbody/"><i class="fa fa-instagram"> </i></a>
+      </div>
+      <div class="footerText">
+        <p>Renew Bath & Body © 2018 All Rights Reserved <br>
+        Powered by Fission Content Management System | Website Design by 360 PSG</p>
+      </div>
+    </footer>
 
 
-      <script type="text/javascript" src="js\particles.min.js"></script>
-      <script type="text/javascript" src="check.js"></script>
-      <script type="text/javascript" src="js\particles.js"></script>
-      <script type="text/javascript" src="js\app.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-</body>
-</HTML>
+
+  </body>
+</html>
