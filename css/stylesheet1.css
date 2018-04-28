@@ -8,6 +8,16 @@ body{
   margin: 0;
   overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+
 
 ul,li{
   list-style: none;
@@ -232,34 +242,43 @@ nav{
   left: 1.5%;
 }
 
-#publicationsBody .row{
+#publicationsBody{
   position: relative;
+  margin-top: 4vh;
   height:60vh;
 }
 
-#publicationsBody .row .col1{
+#publicationsBody .col1{
   background:black;
 }
 
-#publicationsBody .row .col1 h2{
+#publicationsBody .col1 #titleBlock{
   position: relative;
   top: 50%;
-  font-size: 2vw;
   transform: translateY(-50%);
   text-align: center;
+}
+
+#publicationsBody .col1 #titleBlock h2{
+  font-size: 2vw;
   color:white;
 }
 
-#publicationsBody .row .col2{
+#publicationsBody .col1 a{
+  color: red;
+  font-size: 0.8vw;
+}
+
+#publicationsBody .col2{
   background: white;
 }
 
-#publicationsBody .row .col2 p{
+#publicationsBody .col2 p{
   position: relative;
   top: 50%;
   font-size: 1.2vw;
   transform: translateY(-50%);
-  text-align: center;
+  text-align: justify;
 }
 
 #aboutMe{
@@ -336,7 +355,7 @@ nav{
 
 #aboutMeBox2{
   position: relative;
-  background: silver;
+  background:silver;
 }
 
 #aboutMeBox2 p{
