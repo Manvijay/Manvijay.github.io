@@ -3,42 +3,62 @@
 <head>
   <meta name="viewport" content="width= device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css\stylesheet1.css">
-  <!--link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css"-->
+  <link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css">
   <title> Manvijay </title>
   <link rel="icon" href="manvijay.png" type="image/png">
+
 </head>
 
 <body>
   <div id="wrapper">
       <!--This section contains the navigation bar-->
-      <nav class=" fixed-top container-fluid" id="nav">
-          <div class="toggle">
-              <i class="fa fa-bars"></i>
-          </div>
 
-          <ul style="float:left" id="leftNav">
-            <li><a id="banner" href="#homePage" >
-                <img src="manvijay.png" ></img>
-              </a>
-            </li>
-            <li class="non-banner"><a  href="#aboutMe">About Me</a></li>
-            <li class="non-banner"><a  href="#projects" >Projects</a></li>
-            <li class="non-banner"><a  href="#publications">Publications</a></li>
-            <li class="non-banner"><a  href="resume.pdf" target="blank" fullscreen="yes">Resume </a></li>
-            <li class="non-banner"><a  href="#social"> Social Links</a></li>
-          </ul>
+      <nav class="container-fluid fixed-top topNav">
 
-          <ul style="float:right" id="rightNav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i id="toggle" onclick="myFunction()" class="fa fa-bars"></i>
+        </a>
 
+        <ul id="NavItemLeft"style="float:left">
+
+          <li class="NavItem">
+            <a  href="#aboutMe">About Me</a>
+          </li>
+          <li class="NavItem">
+            <a  href="#projects">Projects</a>
+          </li>
+          <li class="NavItem">
+            <a  href="#publications">Publications</a>
+          </li>
+          <li class="NavItem">
+            <a  href="resume.pdf" target="blank" fullscreen="yes">Resume</a>
+          </li>
+          <li class="NavItem">
+            <a  href="#social">Social Links</a>
+          </li>
+        </ul>
+
+        <a class="banner" href="#homePage" >
+          <img src="manvijay.png" ></img>
+        </a>
+
+        <ul id="NavItemRight"style="float:right">
+
+          <li class="NavItem">
             <i class="fa fa-futbol-o"></i>
             <i class="fa fa-cutlery" ></i>
             <i class="fa fa-code"></i>
             <i class="fa fa-repeat fa-spin"></i>
-            <li> <span style="font-weight:900 ; ">Manvijay</span> Lather</li>
-          </ul>
+          </li>
+          <li class="NavItem" id="nameNav"> Manvijay Lather</li>
+
+        </ul>
       </nav>
+
+
       <!--Navigation Bar ends here-->
 
 
@@ -57,87 +77,151 @@
 
       <!--This div has My Projects and is just below home page-->
       <div class="container-fluid" id="projects" style="overflow:hidden;">
-        <div id="particles-js-projects" >
-          <div id="titleProjects">
-              <h2 class="no-span">My Projects</h2>
+
+        <div id="titleProjects">
+            <h2  class="no-span">My Projects</h1>
+        </div> <!--title ends here-->
+        <div class="container-fluid grid">
+          <div class="card">
+            <img src="tensorflow-logo.jpg">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/Object-tracking">
+                  Object Tracker
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is a Hybrid Object Tracking pipeline built using Google's tensorflow and Lucas Kanade tracker.
+              </div>
+            </div>
           </div>
-          <div class="row d-flex" id="cardRow">
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="c++-logo.jpg" class="img-fluid" >
-                <div class="cardTitle">
-                  <h3> Movie Ticketing System </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div> <!--cardDescription ends here-->
-              </div>  <!--card ends here-->
-            </div>  <!--column ends here-->
-
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="java-logo.jpg"  class="img-fluid" >
-                <div class="cardTitle">
-                  <h3> Interpreter </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div>
+          <div class="card">
+            <img src="java-logo.jpg">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/Interpreter">
+                  Interpreter
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is an interpreter built in Java and SML capable of reading instructions from a
+                file and executing them.
               </div>
             </div>
-
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="sql-logo.png"  class="img-fluid" >
-                <div class="cardTitle">
-                  <h3>Database-Design </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div>
+          </div>
+          <div class="card">
+            <img src="android-logo.gif">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/stats-o-score">
+                  Android Sports App
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                An android sports app which not only shows live scores and player stats but also has a
+                feature to compare two players based on their stats.
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-3 d-flex">
-              <div class="card">
-                <img src="tensorflow-logo.jpg" class="img-fluid" width="100%" >
-                <div class="cardTitle">
-                  <h3> Object Tracking </h3>
-                </div>
-                <div class="cardDescription">
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </div> <!--cardDescription ends here-->
-              </div> <!--card ends here-->
-            </div> <!--4th column ends here-->
-          </div> <!--row ends here-->
-        </div>  <!--particles-js-projects ends here-->
+        <div class="container-fluid grid">
+          <div class="card">
+            <img src="c++-logo.jpg">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="">
+                  Movie Theatre Ticketing System
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                A ticketing system built in C++ which let's the user to allot seats and bill tickets for a movie theatre.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="html5-css-javascript-logo.png">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/renewbathandbody">
+                  Skin-Care Line Website <br>(front end)
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is a front end prototype of the website for Renew Bath and Body (Skin Care Line in Buffalo).
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sql-logo.png">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="#">
+                  Database Design
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is the structure and design of a social networking website. Coded in PostgreSQL
+                and follows ER Designing principles.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>  <!--projects ends here-->
-      <!--Section for my projects ends here-->
+    </div><!--Section for my projects ends here-->
 
 
       <!-- This div has My Publications and is located under My Projects-->
+
       <div class="container-fluid" id="publications">
+        <a href="https://www.academia.edu/36415633/Research_Paper_Automation_in_Sugarcane_Management_Plant" target="_blank">
           <div id="titlePublications">
             <h2 class="no-span">My Publications</h2>
             <br>
-            <h4 style="text-align:center; color:grey; font-size:2vw"> (coming soon) </h4>
           </div>
 
-          <div class="container-fluid" id="publicationsBody">
-            <div class="row" style="margin:20px auto">
-              <div class="col1 col-md-2">
-                     <h2>
-                       Automation<br>
-                       Of <br>Sugarcane<br>
-                       Processing Plant
-                     </h2>
+          <div class="container-fluid row" id="publicationsBody">
+              <div class="col1 col-sm-3">
+                <div id="titleBlock">
+                  <h2>Automation <br>In Sugarcane <br>Management Plant<h2>
+                    <a href="https://www.academia.edu/36415633/Research_Paper_Automation_in_Sugarcane_Management_Plant">
+                      <i class="fas fa-book"></i> Tap/Click here to read the full paper.
+                    </a>
+                  </div>
               </div>
-              <div class="col2 col-md-10">
-                    <p> Research Report will be posted shortly. </p>
-              </div>
-            </div>
-          </div>
+              <div class="col2 col-sm-9">
 
+                <p>
+                  <b> Abstract :</b>
+                    The paper proposes a Software Architecture Model for Sugarcane Life Cycle Management,
+                    thus automating agriculture Operations, such as tracking Cane Inventory, monitoring
+                    field activities, and tracking On Field Investments. The paper also has proposed
+                    various models-such as Land selection, Cane seed distribution, supply management, pre
+                    and post-harvest management, farmer payment management, contractor management and
+                    general documentations.<br><br>
+
+                    <b>Key Terms :</b>
+                     Agriculture,
+
+                     Automatic generation control, Design automation, Sugar industry<br> <br>
+
+                    <b>Area of Research :</b>
+                    Sugarcane life management
+                    <br>
+
+
+                </p>
+
+              </div><!--column 2 ends here-->
+          </div><!--publicationsBody ends here-->
+        </a>
       </div>  <!--publications ends here-->
       <!--Section for my publications ends here-->
 
@@ -146,7 +230,8 @@
       <div  id="aboutMe">
         <div id="aboutMeHeader">
           <div id="imageContainer">
-            <img class="mySlides" src="11.jpg" ></img>
+            <img id="imageBig" class="mySlides" src="11.jpg" ></img>
+            <img id="imageSmall" class="mySlides" src="myPic.jpg" ></img>
           </div>
           <div id="Name">
             <h1>Manvijay</h1>
@@ -187,11 +272,12 @@
       <!--This div has the footer of the website-->
       <footer class="container-fluid"  id="social">
         <div class="icons">
-          <span style="font-size: 1.3vw">Lets Connect : </span>
+          <span>Lets Connect : </span>
           <a href="https://www.instagram.com/manvijaylather/"><i class="fa fa-instagram"> </i></a>
           <a href="https://github.com/Manvijay"><i class="fa fa-github"></i></a>
           <a href="https://www.linkedin.com/in/manvijay-lather-a07734119"><i class="fa fa-linkedin" ></i></a>
-          <a href="mailto: manvijay@buffalo.edu?subject=I%20visited%20your%20website%20:)"><i class="fa fa-envelope" ></i></a>
+          <a href="mailto:manvijay@buffalo.edu"><i class="fa fa-envelope" ></i></a>
+
         </div>
         <div class="container-fluid" id="copyright">
           &copy; Manvijay Lather

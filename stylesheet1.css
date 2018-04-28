@@ -3,22 +3,6 @@
   font-family: 'Comfortaa', cursive;
 }
 
-body{
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
-a{
-    text-decoration: none;
-    color:inherit;
-}
-
-a:hover{
-    text-decoration: none;
-    color:inherit;
-}
-
-
 ul,li{
   list-style: none;
   margin: 0px;
@@ -35,8 +19,8 @@ nav{
 
 .banner>img{
   position: absolute;
-  max-width: 2vw;
-  max-height: 4vh;
+  width: 2vw;
+  height: 4vh;
   top:2vh;
   left: 65vw;
   transform: translateX(-50%);
@@ -83,8 +67,10 @@ nav{
 
 #homePage img{
   position: absolute;
-  max-height:40%;
+  height: 35%;
+  width: 20%;
   max-width: 100%;
+  max-height: 100%;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -242,43 +228,34 @@ nav{
   left: 1.5%;
 }
 
-#publicationsBody{
+#publicationsBody .row{
   position: relative;
-  margin-top: 4vh;
   height:60vh;
 }
 
-#publicationsBody .col1{
+#publicationsBody .row .col1{
   background:black;
 }
 
-#publicationsBody .col1 #titleBlock{
+#publicationsBody .row .col1 h2{
   position: relative;
   top: 50%;
+  font-size: 2vw;
   transform: translateY(-50%);
   text-align: center;
-}
-
-#publicationsBody .col1 #titleBlock h2{
-  font-size: 2vw;
   color:white;
 }
 
-#publicationsBody .col1 a{
-  color: grey;
-  font-size: 0.8vw;
-}
-
-#publicationsBody .col2{
+#publicationsBody .row .col2{
   background: white;
 }
 
-#publicationsBody .col2 p{
+#publicationsBody .row .col2 p{
   position: relative;
   top: 50%;
   font-size: 1.2vw;
   transform: translateY(-50%);
-  text-align: justify;
+  text-align: center;
 }
 
 #aboutMe{
@@ -321,10 +298,6 @@ nav{
   opacity: 0.5;
 }
 
-#imageSmall{
-  display: none;
-}
-
 #aboutMeFooter{
   position:relative;
   height: 20vh;
@@ -355,21 +328,21 @@ nav{
 
 #aboutMeBox2{
   position: relative;
-  background:silver;
+  background: grey;
 }
 
 #aboutMeBox2 p{
   position: relative;
-  text-align: center;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 1.1vw;
-  padding: 5px 5px;
+  padding: 10px;
 }
 
 footer{
   position: relative;
-  height:25vh;
+  height:15vh;
   background: black;
   overflow: hidden;
 }
@@ -380,7 +353,7 @@ footer{
 
 #social span{
   position:relative;
-  font-size: 0.9em;
+  style="font-size: 0.9em"
 }
 
 footer .icons{

@@ -1,70 +1,252 @@
-@media screen and (max-width:768px){
-
-  .toggle{
-        display:inline-block;
-        float:right;
-        font-size: 30px;
+@media screen and (max-width:1109px){
+  .grid{
+    position: relative;
+    top:15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3vw;
+    grid-row-gap: 1vh;
   }
 
-  .toggle:hover li{
+  .card{
+    position:relative;
+    top: 10%;
+    height: 40vh;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    text-align: center;
+  }
+
+  #projectText{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    margin: auto;
+  }
+
+  #projectBrief{
+    display: none;
+  }
+
+  #projectName{
+
+  }
+
+  #publicationsBody{
+    position: relative;
+    height:75vh;
+    width: 100%;
+    padding: 0;
+    margin: 4vh 0;
+  }
+
+  #publicationsBody .col1 #titleBlock h2{
+    font-size: 3vw;
+    color:white;
+  }
+
+  #publicationsBody .col1 a{
+    color: grey;
+    font-size: 2vw;
+  }
+
+  #publicationsBody .col2 p{
+    position: relative;
+    top: 50%;
+    font-size: 2vw;
+    transform: translateY(-50%);
+    text-align: justify;
+  }
+
+}
+
+@media screen and (max-width:998px){
+
+  #NavItemLeft, #nameNav{
+      display: none;
+  }
+
+  .banner>img{
+    position: absolute;
+    max-width: 4vw;
+    max-height: 6vh;
+    top:2vh;
+    left: 4vw;
+    transform: translateX(-50%);
+  }
+
+  #toggle{
+    display: none;
+  }
+
+  #homePage{
+    height: 70vh;
+  }
+
+  #publications{
+      position:relative;
+      width: 100%;
+    }
+
+    #publicationsBody{
+      position: relative;
+      height:75vh;
+      width: 100%;
+      padding: 0;
+      margin: 4vh 0;
+    }
+
+    #publicationsBody .col1 #titleBlock h2{
+      font-size: 3vw;
+      color:white;
+    }
+
+    #publicationsBody .col1 a{
+      color: grey;
+      font-size: 1.5vw;
+    }
+
+    #publicationsBody .col2 p{
+      position: relative;
+      top: 50%;
+      font-size: 2vw;
+      transform: translateY(-50%);
+      text-align: justify;
+    }
+
+
+}
+
+@media screen and (max-width:550px){
+
+  body,#wrapper{
+    overflow-x: hidden;
+  }
+
+  #homePage{
+      height: 70vh;
+    }
+
+  .grid{
+    position: relative;
+    top:15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: auto;
+  }
+
+  .card{
+    position:relative;
+    top: 10%;
+    height: 40vh;
+    text-align: center;
+    padding: auto;
+    margin: 10px;
+  }
+
+  #projectBrief{
+    display: block;
+    font-size: 0.8em;
+  }
+
+  #publicationsBody{
+    position: relative;
+    height:75vh;
+    width: 100%;
+    padding: 0;
+    margin: 4vh 0;
+  }
+
+  #publicationsBody .col1 #titleBlock h2{
+    font-size: 6vw;
+    color:white;
+  }
+
+  #publicationsBody .col1 a{
+    color: grey;
+    font-size: 3vw;
+  }
+
+  #publicationsBody .col2 p{
+    position: relative;
+    top: 50%;
+    font-size: 2vw;
+    transform: translateY(-50%);
+    text-align: justify;
+  }
+
+  #aboutMeBox2 p{
+    font-size: 0.38em;
+  }
+
+  #aboutMeHeader{
+    height: 50vh
+  }
+
+  footer{
+    position: relative;
+    height:35vh;
+    background: black;
+    overflow: hidden;
+  }
+
+  #social span{
+    position:relative;
+    font-size: 3vw;
+  }
+
+  .icons i{
+    font-size: 5.5vw;
+    padding: 0px 3px;
+  }
+
+}
+
+@media screen and (max-width:430px){
+
+  #projectBrief{
+    font-size: 0.58em;
+  }
+
+  #publicationsBody{
+    position: relative;
+    height:75vh;
+    width: 100%;
+    padding: 0;
+    margin: 4vh 0;
+  }
+
+  #publicationsBody .col1 #titleBlock h2{
+    font-size: 6vw;
+    color:white;
+  }
+
+  #publicationsBody .col1 a{
+    color: grey;
+    font-size: 2vw;
+  }
+
+  #publicationsBody .col2 p{
+    position: relative;
+    top: 50%;
+    font-size: 2vw;
+    transform: translateY(-50%);
+    text-align: justify;
+  }
+
+
+  #imageBig{
+    display: none;
+  }
+
+  #imageSmall{
     display: block;
   }
 
-  #particles-js{
-    background: black;
-    padding:0;
-    height:100vh;
-    width:100%;
-    top=0;
-    position: auto;
+  #aboutMeBox2 p{
+    font-size: 1.7vw;
   }
 
-  #image-container img{
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 30vh;
-    width: 50%;
-    position:absolute;
-  }
 
-  #motto{
-    font-size: 150%;
-    top: 70%;
-    left: 50%;
-  }
-
-  #nav li{
-        display: none;
-  }
-
-  #banner{
-       float: left;
-       display: inline;
-  }
-
-}
-
-@media screen and (min-width:769px) and (max-width: 1112px)
-{
-  #motto{
-    font-size: 250%;
-    
-  }
-
-  #image-container img{
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 30vh;
-    width: 40%;
-    position:absolute;
-  }
-}
-
-@media screen and (max-width: 563px)
-{
-  #motto{
-    font-size: 150%;
-  }
 }
