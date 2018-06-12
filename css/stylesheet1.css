@@ -128,7 +128,14 @@ nav{
   margin-top: 8vh;
   margin-bottom: 4vh;
   text-align: center;
+  background: white;
   overflow: hidden;
+  transition: transform .5s;
+}
+
+.card:hover, .card:focus{
+  transform: scale3d(1.05, 1.05, 1);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
 }
 
 .card img{
@@ -210,7 +217,7 @@ nav{
     width: 100%;
     height: 100vh;
     padding-top: 40px;
-    background: silver;
+    background: #EBEDEF;
 }
 
 #titlePublications h2.no-span {
@@ -270,7 +277,7 @@ nav{
 }
 
 #publicationsBody .col2{
-  background: white;
+  background:white;
 }
 
 #publicationsBody .col2 p{
@@ -355,7 +362,7 @@ nav{
 
 #aboutMeBox2{
   position: relative;
-  background:silver;
+  background:white;
 }
 
 #aboutMeBox2 p{
@@ -376,11 +383,13 @@ footer{
 
 #social{
   position: relative;
+  transition: transform 0.5s;
 }
 
 #social span{
   position:relative;
-  font-size: 0.9em;
+  font-size: 1.3em;
+  color:#5DADE2;
 }
 
 footer .icons{
@@ -392,12 +401,12 @@ footer .icons{
 }
 
 .icons i{
-  font-size: 1.7em;
+  font-size: 2.0em;
   padding: 0px 10px;
 }
 
 .icons a{
-  color: grey;
+  color: #5DADE2;
 }
 
 footer i:hover{
@@ -411,8 +420,9 @@ footer #copyright{
   left: 0px;
   width: 100%;
   padding: 0px;
+  font-family: "comfortaa";
   margin: 0px;
-  background: silver;
+  background: white;
   color: black;
   text-align: center;
 }
