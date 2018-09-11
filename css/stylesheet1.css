@@ -409,6 +409,10 @@ footer .icons{
   color: #5DADE2;
 }
 
+.footerResume{
+  display: none;
+}
+
 footer i:hover{
   color: white;
 }
