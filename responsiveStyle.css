@@ -1,0 +1,60 @@
+@media screen and (max-width:450px){
+  html,body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .topWrapper{
+    height: 100vh;
+    background-image: url("topWrapperBackMob.png");
+  }
+
+  .mobileLcd{
+    display:block;
+    min-height: 105vh;
+    padding:10px;
+    z-index: 5;
+  }
+
+  .lcdDisplayContainer{
+    display: none;
+  }
+
+  .mobileDistractionSec{
+    display:none;
+    height: 100vh;
+  }
+
+  .distractionSec{
+    display:none;
+  }
+
+  .mobileTeam{
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+
+  .mobileTeamGrid{
+    display: grid;
+  }
+
+  .team{
+    display: none;
+  }
+
+  .teamMember .card{
+    position: relative;
+    height: 25vh;
+  }
+
+  .footerList{
+    left: 30%;
+    padding-bottom: 40px;
+  }
+
+  .bigButton{
+    height:15vh;
+    font-size: 10vw;
+  }
+
+}
