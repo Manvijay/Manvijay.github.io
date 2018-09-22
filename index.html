@@ -1,372 +1,294 @@
-<html>
-  <head>
-    <meta charset="utf-8" name="viewport" content="width= device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="stylesheetMain.css"/>
-    <link rel="stylesheet" type="text/css" href="responsiveStyle.css"/>
-    <title>Quic</title>
-    <link rel="icon" type="image" href="Favicon.png">
-    <script type="text/javascript" src="jsMain.js"></script>
+<!DOCTYPE HTML>
+<HTML>
+<head>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css\stylesheet1.css">
+  <link rel="stylesheet" type="text/css" href="css\ResponsiveStylesheet.css">
+  <title> Manvijay </title>
+  <link rel="icon" href="manvijay.png" type="image/png">
 
-  </head>
-  <body>
-    <div class="topWrapper container-fluid" id="nav">
-      <nav class="container navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-        <div class="col-md-7">
-          <a class="navbar-brand" href="#">
-            <img src="Logo.svg" width="110" height="110" >
-          </a>
-        </div>
-        <div class="col-md-5">
-          <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button-->
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <!-- Begin MailChimp Signup Form -->
-              <!-- Trigger/Open The Modal -->
-              <button class="btn btn-sm nav-item nav-link" id="earlyAccess" style="color:black"> Early Access</button>
-      <!--************************************************************************************************-->
-              <a class="nav-item nav-link active" href="#nav" style="color:white">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#lcdAnnotations">Product</a>
-              <a class="nav-item nav-link" href="#team">About</a>
-            </div>
-          </div>
-        </div>
+</head>
+
+<body>
+  <div id="wrapper">
+      <!--This section contains the navigation bar-->
+
+      <nav class="container-fluid fixed-top topNav">
+
+        <!--a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i id="toggle" onclick="myFunction()" class="fa fa-bars"></i>
+        </a-->
+
+        <ul id="NavItemLeft"style="float:left">
+
+          <li class="NavItem">
+            <a  href="#aboutMe">About Me</a>
+          </li>
+          <li class="NavItem">
+            <a  href="#projects">Projects</a>
+          </li>
+          <li class="NavItem">
+            <a  href="#publications">Publications</a>
+          </li>
+          <li class="NavItem">
+            <a  href="resume.pdf" target="blank" fullscreen="yes">Resume</a>
+          </li>
+          <li class="NavItem">
+            <a  href="#social">Social Links</a>
+          </li>
+        </ul>
+
+        <a class="banner" href="#homePage" >
+          <img src="manvijay.png" ></img>
+        </a>
+
+        <ul id="NavItemRight"style="float:right">
+
+          <li class="NavItem">
+            <i class="fa fa-futbol-o"></i>
+            <i class="fa fa-cutlery" ></i>
+            <i class="fa fa-code"></i>
+            <i class="fa fa-repeat fa-spin"></i>
+          </li>
+          <li class="NavItem" id="nameNav"> Manvijay Lather</li>
+
+        </ul>
       </nav>
-      <div class="container mottoContainer">
-        <div class="row" id="motto">
-          <div class="col-md-6">
-            <h1>
-              Keeping drivers <br>
-              focused on driving
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Begin MailChimp Signup Form -->
-          <!-- Trigger/Open The Modal -->
-          <div class="col-md-6">
-            <button class="btn preOrder" id="preOrder"> Pre-Order Now</button>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-                #subscribeHeader{color:black}
-                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                 </style>
-                <div id="mc_embed_signup">
-                  <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL" id="subscribeHeader">Sign up to stay informed</label>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
-                      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                      </div>
-                  </form>
-                </div>
+
+      <!--Navigation Bar ends here-->
+
+
+      <!--This div has the Home Page, the top most section below navigation bar-->
+      <div class="container-fluid" id="homePage">
+          <div id="image-container">
+            <img src="manvijay.png">
+          </div>
+
+          <div class="container-fluid" id="motto" >
+            Dream. Believe. Conquer.
+          </div>
+
+      </div>
+      <!--My homepage ends here-->
+
+      <!--This div has My Projects and is just below home page-->
+      <div class="container-fluid" id="projects" style="overflow:hidden;">
+
+        <div id="titleProjects">
+            <h2  class="no-span">My Projects</h1>
+        </div> <!--title ends here-->
+        <div class="container-fluid grid">
+          <div class="card">
+            <img src="tensorflow-logo.jpg">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/Object-tracking">
+                  Object Tracker
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is a Hybrid Object Tracking pipeline built using Google's tensorflow and Lucas Kanade tracker.
               </div>
             </div>
           </div>
-  <!--************************************************************************************************-->
-
-        </div>
-      </div>
-    </div>
-
-  <!--***********************************************************************************************-->
-    <div class="container-fluid lcdDisplayContainer" id="lcdAnnotations">
-      <div class="container" style="position: relative;display: grid;grid-template-columns: 1fr 2fr 1fr;" >
-        <div class="text">
-          <div class="row" style="position:relative;top:50%;transform:translateY(-50%)">
-            <h2>IPS LCD Display</h2>
-            <p>Crisp, high resolution display with 180 degree viewing angle makes Quic beatiful and visible from anywhere in the vehicle.
-            </p>
+          <div class="card">
+            <img src="java-logo.jpg">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/Interpreter">
+                  Interpreter
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is an interpreter built in Java and SML capable of reading instructions from a
+                file and executing them.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="android-logo.gif">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/stats-o-score">
+                  Android Sports App
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                An android sports app which not only shows live scores and player stats but also has a
+                feature to compare two players based on their stats.
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="productGifContainer" >
-          <img src="product.gif">
+        <div class="container-fluid grid">
+          <div class="card">
+            <img src="c++-logo.jpg">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="">
+                  Movie Theatre Ticketing System
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                A ticketing system built in C++ which let's the user to allot seats and bill tickets for a movie theatre.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="html5-css-javascript-logo.png">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="https://github.com/Manvijay/renewbathandbody">
+                  Skin-Care Line Website <br>(front end)
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is a front end prototype of the website for Renew Bath and Body (Skin Care Line in Buffalo).
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="sql-logo.png">
+            <div id="projectText">
+              <div id="projectName">
+                <a href="#">
+                  Database Design
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+              <div id="projectBrief">
+                This is the structure and design of a social networking website. Coded in PostgreSQL
+                and follows ER Designing principles.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="text">
-          <div class="text" style="position:relative;top:50%;transform:translateY(-50%)">
-            <div class="row" style="padding-bottom:20vh;">
-              <h2>Solar Powered</h2>
-              <p>With a 10hr battery life for overnight trips, Quic has you covered from dusk to dawn. Never plug a power cable into your GPS again, enjoy the freedom of wirelessness.
+      </div>  <!--projects ends here-->
+    </div><!--Section for my projects ends here-->
+
+
+      <!-- This div has My Publications and is located under My Projects-->
+
+      <div class="container-fluid" id="publications">
+        <a href="https://www.academia.edu/36415633/Research_Paper_Automation_in_Sugarcane_Management_Plant" target="_blank">
+          <div id="titlePublications">
+            <h2 class="no-span">My Publications</h2>
+            <br>
+          </div>
+
+          <div class="container-fluid row" id="publicationsBody">
+              <div class="col1 col-sm-3">
+                <div id="titleBlock">
+                  <h2>Automation <br>In Sugarcane <br>Management Plant<h2>
+                    <a href="https://www.academia.edu/36415633/Research_Paper_Automation_in_Sugarcane_Management_Plant">
+                      <i class="fas fa-book"></i> Tap/Click here to read the full paper.
+                    </a>
+                  </div>
+              </div>
+              <div class="col2 col-sm-9">
+
+                <p>
+                  <b> Abstract :</b>
+                    The paper proposes a Software Architecture Model for Sugarcane Life Cycle Management,
+                    thus automating agriculture Operations, such as tracking Cane Inventory, monitoring
+                    field activities, and tracking On Field Investments. The paper also has proposed
+                    various models-such as Land selection, Cane seed distribution, supply management, pre
+                    and post-harvest management, farmer payment management, contractor management and
+                    general documentations.<br><br>
+
+                    <b>Key Terms :</b>
+                     Agriculture,
+
+                     Automatic generation control, Design automation, Sugar industry<br> <br>
+
+                    <b>Area of Research :</b>
+                    Sugarcane life management
+                    <br>
+
+
+                </p>
+
+              </div><!--column 2 ends here-->
+          </div><!--publicationsBody ends here-->
+        </a>
+      </div>  <!--publications ends here-->
+      <!--Section for my publications ends here-->
+
+
+      <!--This div has About Me and is located below My Publications-->
+      <div  id="aboutMe">
+        <div id="aboutMeHeader">
+          <div id="imageContainer">
+            <img id="imageBig" class="mySlides" src="11.jpg" ></img>
+            <img id="imageSmall" class="mySlides" src="myPic.jpg" ></img>
+          </div>
+          <div id="Name">
+            <h1>Manvijay</h1>
+            <h3 style="padding-top:0px">manvijay@buffalo.edu</h3>
+            <div class="container-fluid" id="schedule" >
+              <i class="fa fa-futbol-o"></i>
+              <i class="fa fa-cutlery" ></i>
+              <i class="fa  fa-code"></i>
+              <i class="fa fa-repeat fa-spin"></i>
+            </div>
+          </div>
+        </div><!--aboutMeHeader ends here-->
+
+        <div class="container-fluid" id="aboutMeFooter">
+          <div class="row">
+            <div class="col-md-2" id="aboutMeBox1">
+              <h3>About Me </h3>
+            </div>
+            <div class="col-md-10" id="aboutMeBox2">
+              <p style="text-align:justify">
+                  I am a senior, majoring in Computer Science along with Mathematics as minor at
+                  State University of New York in Buffalo. As a rising software developer, I’m
+                  excited to use my problem solving skills in the technology industry. In my s
+                  ophomore year, I wrote a research paper on Automation of Sugarcane Processing Plant,
+                  which was published in MIBSRC 2017. When it comes to coding, I have good coding
+                  experience in Java, C++, C and Angular (HTML, Typescript, C#). Besides my interest in
+                  coding, I love to follow all kinds of sports. Currently, I’m interning part-time at
+                  Centene Corporation as a Student Associate Developer, until my graduation in December
+                  2018. I’m open to full-time opportunities starting January 2019.
               </p>
-            </div>
+            </div-->
+          </div> <!--row ends here-->
+        </div> <!--aboutMeFooter-->
+      </div> <!--aboutMe-->
+      <!--Section for About Me ends here-->
 
-            <div class="row">
-              <h2>Simple Design</h2>
-              <p>Attractive, no-frills design puts directions you need a glance away. Quic folds away when you don't need it. The latest Bluetooth 5 technology ensures seamless pairing
-              </p>
-            </div>
-          </div>
+
+      <!--This div has the footer of the website-->
+      <footer class="container-fluid"  id="social">
+        <div class="icons">
+          <span>Lets Connect : </span>
+          <a href="https://github.com/Manvijay"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/manvijay-lather-a07734119"><i class="fa fa-linkedin" ></i></a>
+          <a href="mailto:manvijay@buffalo.edu"><i class="fa fa-envelope" ></i></a>
+          <a class="footerResume" href="resume.pdf"><i class="far fa-file-pdf"></i></a></br>
         </div>
-
-      </div>
-    </div>
-
-
-
-    <div class="container-fluid mobileLcd" id="lcdAnnotations" style="">
-      <div class="container" style="position: relative; max-height: 90%;display: grid;grid-template-columns: 1fr 1fr 1fr;" >
-
-        <div class="text">
-          <div class="row" style="position:relative;top:50%;transform:translateY(-50%)">
-            <h2>IPS LCD Display</h2>
-            <p>Crisp, high resolution display with 180 degree viewing angle makes Quic beatiful and visible from anywhere in the vehicle.
-            </p>
-          </div>
+        <div class="container-fluid" id="copyright">
+          &copy; Manvijay Lather 2018
         </div>
+      </footer>
+      <!--Footer ends here-->
 
-        <div>
-        </div>
+  </div> <!--wrapper-->
 
-        <div>
-          <div class="text" style="position:relative;top:50%;transform:translateY(-50%)">
-            <div class="row" style="padding-bottom:20vh;">
-              <h2>Solar Powered</h2>
-              <p>With a 10hr battery life for overnight trips, Quic has you covered from dusk to dawn. Never plug a power cable into your GPS again, enjoy the freedom of wirelessness.
-              </p>
-            </div>
 
-            <div class="row">
-              <h2>Simple Design</h2>
-              <p>Attractive, no-frills design puts directions you need a glance away. Quic folds away when you don't need it. The latest Bluetooth 5 technology ensures seamless pairing
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!--***********************************************************************************************-->
-    <div class="container-fluid distractionSec">
-      <div class="row">
-        <div class="col-md-7 col-sm-7 distractionImageContainer">
-          <img src="distractionPic.png">
-        </div>
-        <div class="col-md-5 col-sm-5 distractionTextContainer">
-          <div class="distractionText">
-            <h2>97% of distracted drivers use GPS on their phone.</h2>
-            <div class="distractionTextPara">
-              <p>
-                Distracted driving is huge problem - GPS navigation is the most common distraction behind the wheel (eSurance survey). Quic focuses on keeping you focused on the road not your smart phone.
-              </p>
-            </div>
-            <button class="btn" id="driveSafe">Drive More Safely </button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  <!--************************************************************************************************-->
-    <div class="container-fluid mobileTeam" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h2>Our Team</h2>
-            Formed at Buffalo Start-Up Weekend 2018 by people who are passionate
-            about great hardware, safety, and user experience.
-          </div>
-          <div class="col-md-9 mobileTeamGrid">
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="george.jpg">
-                  </div>
-                </div>
-                George Beckstein
-                <br><span>Electrical Engineering</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="tony.jpg">
-                  </div>
-                </div>
-                Anthony Olivet
-                <br><span>Mechanical Engineering</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="steve.jpg">
-                  </div>
-                </div>
-                Stephen Petoniak
-                <br><span>Industrial Design/ UX Design</span>
-              </div>
-
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="manvijay.jpg">
-                  </div>
-                </div>
-                Manvijay Lather
-                <br><span>Front-End Development</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="wesley.jpg">
-                  </div>
-                </div>
-                Wesley Csendom
-                <br><span>Project Management</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="tommy.jpg">
-                  </div>
-                </div>
-                Tommy Creenan
-                <br><span>Graphic Design</span>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid team" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h2>Our Team</h2>
-            Formed at Buffalo Start-Up Weekend 2018 by people who are passionate
-            about great hardware, safety, and use experience.
-          </div>
-          <div class="col-md-9">
-            <div class="row teamGridRow">
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="george.jpg">
-                  </div>
-                </div>
-                George Beckstein
-                <br><span>Electrical Engineering</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="tony.jpg">
-                  </div>
-                </div>
-                Anthony Olivet
-                <br><span>Mechanical Engineering</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="steve.jpg">
-                  </div>
-                </div>
-                Stephen Petoniak
-                <br><span>Industrial Design/ UX Design</span>
-              </div>
-            </div>
-
-            <div class="row teamGridRow">
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="manvijay.jpg">
-                  </div>
-                </div>
-                Manvijay Lather
-                <br><span>Front-End Development</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="wesley.jpg">
-                  </div>
-                </div>
-                Wesley Csendom
-                <br><span>Project Management</span>
-              </div>
-              <div class="teamMember">
-                <div class="card">
-                  <div class="cardImageContainer">
-                    <img src="tommy.jpg">
-                  </div>
-                </div>
-                Tommy Creenan
-                <br><span>Graphic Design</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!--************************************************************************************************-->
-    <div class="container-fluid bigButtonContainer">
-      <!-- Begin MailChimp Signup Form -->
-      <!-- Trigger/Open The Modal -->
-      <button class="btn bigButton preOrder" id="preOrderBigButton">
-        Pre-Order Now
-      </button>
-    </div>
-
-  <!--************************************************************************************************-->
-
-    <div class="footer container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 footerList">
-            <div class="row">
-              <img src="Logo.svg" height="80" width="80">
-            </div>
-            <div class="row">
-              <ul>
-                <a href="#nav"><li>Home</li></a>
-                <a href="#team"><li>About</li></a>
-                <a href="#"><li>Contact</li></a>
-              </ul>
-            </div>
-            <div class="row copyright">
-              Quic LLC(c) 2018
-            </div>
-          </div>
-          <div class="col-md-6">
-            <!-- Begin MailChimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-            	#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-            	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-            	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-            <form action="https://quick.us19.list-manage.com/subscribe/post?u=81ea92af297c8137fbe7a79ea&amp;id=5cfd7ae59b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-            	<label for="mce-EMAIL">Subscribe to our mailing list</label>
-            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px" aria-hidden="true"><input type="text" name="b_81ea92af297c8137fbe7a79ea_5cfd7ae59b" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-            </form>
-            </div>
-
-            <!--End mc_embed_signup-->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script type="text/javascript" src="jsMain.js"></script>
-  </body>
-</html>
+      <script type="text/javascript" src="check.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</HTML>
