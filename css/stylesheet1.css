@@ -24,53 +24,14 @@ ul,li{
   margin: 0px;
 }
 
-nav{
-  position: relative;
-  display: inline-block;
-  height: 7vh;
-  width: 100%;
-  background-color: rgba(40,40,40,0.8);
-}
-
-
-.banner>img{
-  position: absolute;
-  max-width: 2vw;
-  max-height: 4vh;
-  top:2vh;
-  left: 65vw;
-  transform: translateX(-50%);
-}
-
-.NavItem{
-  line-height: 7vh;
-  margin-right: 20px;
-  margin-left: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-.NavItem a{
-  color: silver;
+.navbar{
   font-size: 0.8em;
+  background: black;
+  opacity: 1;
 }
 
-.NavItem a:hover{
-  color: white;
-  text-decoration: none;
-}
-
-#NavItemRight{
-  color: white
-}
-
-
-#toggle{
-  display: none;
-  font-size: 1.3em;
-  line-height: 7vh;
-  vertical-align: middle;
-  color: white;
+.navbar-text{
+  color: white !important
 }
 
 #homePage{
@@ -373,6 +334,8 @@ nav{
   font-size: 1vw;
   padding: 5px 5px;
 }
+
+/*
 
 footer{
   position: relative;
