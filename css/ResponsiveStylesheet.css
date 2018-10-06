@@ -124,6 +124,7 @@
 @media screen and (max-width:768px){
   .navbar{
     padding: .5rem 1rem;
+    background: #212F3C;
   }
   .navbar-text{
     display: none;
