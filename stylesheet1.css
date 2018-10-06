@@ -3,58 +3,35 @@
   font-family: 'Comfortaa', cursive;
 }
 
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+
+
 ul,li{
   list-style: none;
   margin: 0px;
 }
 
-nav{
-  position: relative;
-  display: inline-block;
-  height: 7vh;
-  width: 100%;
-  background-color: rgba(40,40,40,0.8);
-}
-
-
-.banner>img{
-  position: absolute;
-  width: 2vw;
-  height: 4vh;
-  top:2vh;
-  left: 65vw;
-  transform: translateX(-50%);
-}
-
-.NavItem{
-  line-height: 7vh;
-  margin-right: 20px;
-  margin-left: 20px;
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-.NavItem a{
-  color: silver;
+.navbar{
   font-size: 0.8em;
+  background: black;
+  opacity: 1;
 }
 
-.NavItem a:hover{
-  color: white;
-  text-decoration: none;
-}
-
-#NavItemRight{
-  color: white
-}
-
-
-#toggle{
-  display: none;
-  font-size: 1.3em;
-  line-height: 7vh;
-  vertical-align: middle;
-  color: white;
+.navbar-text{
+  color: white !important
 }
 
 #homePage{
@@ -67,10 +44,8 @@ nav{
 
 #homePage img{
   position: absolute;
-  height: 35%;
-  width: 20%;
+  max-height:40%;
   max-width: 100%;
-  max-height: 100%;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -114,7 +89,14 @@ nav{
   margin-top: 8vh;
   margin-bottom: 4vh;
   text-align: center;
+  background: white;
   overflow: hidden;
+  transition: transform .5s;
+}
+
+.card:hover, .card:focus{
+  transform: scale3d(1.05, 1.05, 1);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
 }
 
 .card img{
@@ -196,7 +178,7 @@ nav{
     width: 100%;
     height: 100vh;
     padding-top: 40px;
-    background: silver;
+    background: #EBEDEF;
 }
 
 #titlePublications h2.no-span {
@@ -228,34 +210,43 @@ nav{
   left: 1.5%;
 }
 
-#publicationsBody .row{
+#publicationsBody{
   position: relative;
+  margin-top: 4vh;
   height:60vh;
 }
 
-#publicationsBody .row .col1{
+#publicationsBody .col1{
   background:black;
 }
 
-#publicationsBody .row .col1 h2{
+#publicationsBody .col1 #titleBlock{
   position: relative;
   top: 50%;
-  font-size: 2vw;
   transform: translateY(-50%);
   text-align: center;
+}
+
+#publicationsBody .col1 #titleBlock h2{
+  font-size: 2vw;
   color:white;
 }
 
-#publicationsBody .row .col2{
-  background: white;
+#publicationsBody .col1 a{
+  color: grey;
+  font-size: 0.8vw;
 }
 
-#publicationsBody .row .col2 p{
+#publicationsBody .col2{
+  background:white;
+}
+
+#publicationsBody .col2 p{
   position: relative;
   top: 50%;
   font-size: 1.2vw;
   transform: translateY(-50%);
-  text-align: center;
+  text-align: justify;
 }
 
 #aboutMe{
@@ -298,6 +289,10 @@ nav{
   opacity: 0.5;
 }
 
+#imageSmall{
+  display: none;
+}
+
 #aboutMeFooter{
   position:relative;
   height: 20vh;
@@ -328,32 +323,36 @@ nav{
 
 #aboutMeBox2{
   position: relative;
-  background: grey;
+  background:white;
 }
 
 #aboutMeBox2 p{
   position: relative;
+  text-align: center;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.1vw;
-  padding: 10px;
+  transform: translateY(-50%);
+  font-size: 1vw;
+  padding: 5px 5px;
 }
+
+/*
 
 footer{
   position: relative;
-  height:15vh;
+  height:25vh;
   background: black;
   overflow: hidden;
 }
 
 #social{
   position: relative;
+  transition: transform 0.5s;
 }
 
 #social span{
   position:relative;
-  style="font-size: 0.9em"
+  font-size: 1.3em;
+  color:#5DADE2;
 }
 
 footer .icons{
@@ -365,12 +364,16 @@ footer .icons{
 }
 
 .icons i{
-  font-size: 1.7em;
+  font-size: 2.0em;
   padding: 0px 10px;
 }
 
 .icons a{
-  color: grey;
+  color: #5DADE2;
+}
+
+.footerResume{
+  display: none;
 }
 
 footer i:hover{
@@ -384,8 +387,9 @@ footer #copyright{
   left: 0px;
   width: 100%;
   padding: 0px;
+  font-family: "comfortaa";
   margin: 0px;
-  background: silver;
+  background: white;
   color: black;
   text-align: center;
 }
