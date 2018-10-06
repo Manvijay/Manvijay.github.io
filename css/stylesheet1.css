@@ -349,7 +349,7 @@ ul,li{
 
 footer{
   position: relative;
-  background: #0C121E;
+  background:black;/* #0C121E;*/
 }
 
 .footerLinks a{
