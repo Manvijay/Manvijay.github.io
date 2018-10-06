@@ -16,49 +16,29 @@
   <div id="wrapper">
       <!--This section contains the navigation bar-->
 
-      <nav class="container-fluid fixed-top topNav">
-
-        <!--a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i id="toggle" onclick="myFunction()" class="fa fa-bars"></i>
-        </a-->
-
-        <ul id="NavItemLeft"style="float:left">
-
-          <li class="NavItem">
-            <a  href="#aboutMe">About Me</a>
-          </li>
-          <li class="NavItem">
-            <a  href="#projects">Projects</a>
-          </li>
-          <li class="NavItem">
-            <a  href="#publications">Publications</a>
-          </li>
-          <li class="NavItem">
-            <a  href="resume.pdf" target="blank" fullscreen="yes">Resume</a>
-          </li>
-          <li class="NavItem">
-            <a  href="#social">Social Links</a>
-          </li>
-        </ul>
-
-        <a class="banner" href="#homePage" >
-          <img src="manvijay.png" ></img>
-        </a>
-
-        <ul id="NavItemRight"style="float:right">
-
-          <li class="NavItem">
-            <i class="fa fa-futbol-o"></i>
-            <i class="fa fa-cutlery" ></i>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top pt-1 pb-1">
+        <a class="navbar-brand pl-2" href="#homePage"> <img src="manvijay.png" height=30 width=30></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" >
+            <i class="fas fa-align-right"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navItems">
+          <div class="navbar-nav mr-auto ml-auto" >
+            <a class="nav-link nav-active" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#aboutMe">About Me</a>
+            <a class="nav-link" href="resume.pdf">Resume</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#publications">Publications</a>
+            <a class="nav-link" href="#social">Social Links</a>
+          </div>
+          <span class="navbar-text">
+            <i class="fa fa-futbol"></i>
+            <i class="fa fa-cutlery"></i>
             <i class="fa fa-code"></i>
-            <i class="fa fa-repeat fa-spin"></i>
-          </li>
-          <li class="NavItem" id="nameNav"> Manvijay Lather</li>
-
-        </ul>
+            <i class="fa fa-repeat fa-spin mr-4"></i>
+            Manvijay Lather
+          </span>
+        </div>
       </nav>
-
-
       <!--Navigation Bar ends here-->
 
 
@@ -175,7 +155,7 @@
         </div>
 
       </div>  <!--projects ends here-->
-    </div><!--Section for my projects ends here-->
+      </div><!--Section for my projects ends here-->
 
 
       <!-- This div has My Publications and is located under My Projects-->
@@ -283,6 +263,8 @@
         </div>
       </footer>
       <!--Footer ends here-->
+
+
 
   </div> <!--wrapper-->
 
