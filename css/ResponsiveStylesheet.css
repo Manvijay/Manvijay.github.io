@@ -77,7 +77,7 @@
   }
 
   #homePage{
-    height: 70vh;
+    height: 80vh;
   }
 
   #publications{
@@ -111,14 +111,6 @@
       text-align: justify;
     }
 
-    .footerResume{
-      display: inline-block;
-    }
-
-    .footerResume i{
-      font-size: 6vw;
-    }
-
 }
 
 @media screen and (max-width:768px){
@@ -139,7 +131,7 @@
   }
 
   #homePage{
-      height: 70vh;
+      height: 80vh;
     }
 
   .grid{
@@ -195,28 +187,49 @@
   }
 
   #aboutMeHeader{
-    height: 50vh
-  }
-
-  footer{
     position: relative;
-    height:35vh;
-    background: black;
-    overflow: hidden;
+    height: 70%;
   }
 
-  #social span{
-    position:relative;
-    font-size: 4vw;
+  #aboutMeHeader #Name{
+    position: absolute;
+    top:35vh;
+    left:10vw;
+    color:white;
+    margin: 0px;
+    padding: 0px;
   }
 
-  .icons i{
-    font-size: 7vw;
-    padding: 0px 3px;
+  #aboutMeHeader #Name h1{
+    font-size: 2.5em;
   }
 
-  .footerResume i{
-    font-size: 10vw;
+  #aboutMeHeader #Name #schedule, h3{
+    font-size: 1em;
+    opacity: 0.6;
+  }
+
+  #aboutMeFooter{
+    height: 30%;
+  }
+
+  footer .logo{
+    position: relative;
+    border-top: 1px solid white;
+    border-left: none;
+    padding: 50px;
+    margin: 0 50px;
+  }
+
+  .logo img{
+    position: relative;
+    left: 20%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+  }
+
+  .copyright{
+    font-size: 0.7em;
   }
 
 }
@@ -253,7 +266,6 @@
     text-align: justify;
   }
 
-
   #imageBig{
     display: none;
   }
@@ -266,18 +278,5 @@
     font-size: 2vw;
   }
 
-  #social span{
-    position:relative;
-    font-size: 4vw;
-  }
-
-  .icons i{
-    font-size: 9vw;
-    padding: 0px 3px;
-  }
-
-  .footerResume i{
-    font-size: 13vw;
-  }
 
 }
