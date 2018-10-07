@@ -341,10 +341,14 @@ ul,li{
   height: 15vh;
   line-height: 15vh;
   background:black;
-  color: #2770B5;
+  color: #2D9AED;
   text-align: center;
   font-size: 2.5em;
   overflow: hidden;
+}
+
+#social a:hover{
+  color: white;
 }
 
 footer{
@@ -356,6 +360,9 @@ footer{
   color: #ababab;
 }
 
+.footerLinks a:hover{
+  color: white;
+}
 
 footer .logo{
   position: relative;
@@ -374,12 +381,9 @@ footer .logo{
   text-align: center;
   line-height: 7vh;
   color: #ababab;
+  font-size: 0.7em;
 }
 
-.copyright span{
-  font-size: 0.6em;
-  color: silver;
-}
 
 /*
 
