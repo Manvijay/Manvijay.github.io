@@ -251,17 +251,33 @@ ul,li{
 
 #aboutMe{
   position: relative;
-  width: 100%;
   height: 100vh;
-  padding: 0;
-  margin: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #aboutMeHeader{
   position: relative;
-  background: black;
-  height: 80vh;
+  height: 80%;
+}
+
+#aboutMeFooter{
+  position: relative;
+  height: 20%;
+}
+
+#aboutMeHeader #imageContainer{
+  position: relative;
+  height: 100%;
   width: 100%;
+  background: black;
+}
+
+#aboutMeHeader #imageContainer img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
 }
 
 #aboutMeHeader #Name{
@@ -282,28 +298,13 @@ ul,li{
   opacity: 0.6;
 }
 
-#aboutMe #imageContainer img{
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-}
-
 #imageSmall{
   display: none;
 }
 
-#aboutMeFooter{
-  position:relative;
-  height: 20vh;
-  width:100%;
-  background: red;
-  overflow: hidden;
-}
-
 #aboutMe .row{
   position: relative;
-  height: 20vh;
+  height: 100%;
   background: white;
 }
 
@@ -335,7 +336,62 @@ ul,li{
   padding: 5px 5px;
 }
 
+
+#social{
+  height: 15vh;
+  line-height: 15vh;
+  background:black;
+  color: #2D9AED;
+  text-align: center;
+  font-size: 2.5em;
+  overflow: hidden;
+}
+
+#social a:hover{
+  color: white;
+}
+
+footer{
+  position: relative;
+  background:black;/* #0C121E;*/
+}
+
+.footerLinks a{
+  color: #ababab;
+}
+
+.footerLinks a:hover{
+  color: white;
+}
+
+footer .logo{
+  position: relative;
+  border-left: 1px solid white;
+}
+
+.logo img{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.copyright{
+  background: black;
+  text-align: center;
+  line-height: 7vh;
+  color: #ababab;
+  font-size: 0.7em;
+}
+
+
 /*
+
+
+
+
+
+
 
 footer{
   position: relative;
