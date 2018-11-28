@@ -1,20 +1,9 @@
 console.log("script active");
-var prevScrollPosition= window.pageYOffset;
 arrowElement= document.getElementsByClassName("bouncingArrow")[0];
-console.log(arrowElement.scrollTop);
-
-function scrollCheckForBouncingArrow(){
-  console.log("function called"+arrowElement.scrollTop);
-
-}
-
-function offset(el) {
-  var rect = el.getBoundingClientRect();
-  return ("bottom: "+ Math.round(rect.bottom)+" "+document.documentElement.scrollTop)
-}
+projectDiv= document.getElementById("projects");
 
 window.addEventListener('scroll',function(e){
-  console.log("function called1111 :"+ offset(arrowElement));
+  console.log("inside scroll event listener");
   if(document.documentElement.scrollTop>150){
     arrowElement.style.display="none";
   }
@@ -23,7 +12,13 @@ window.addEventListener('scroll',function(e){
   }
 });
 
+function scrollToProjects(){
+  console.log("inside scrollToProjects");
+  projectDiv.scrollIntoView();
+}
+
 /*
+  $('html,body').animate({ scrollTop: $("#projects").offset().top}, 'slow');
 /* How to get relative position of an element to a div*/
 /*
 function offset(el) {
