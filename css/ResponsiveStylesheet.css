@@ -77,7 +77,15 @@
   }
 
   #homePage{
-    height: 80vh;
+    height: 100vh;
+  }
+
+  #homePage img{
+    top:50%;
+  }
+
+  #homePage #motto{
+    top:80%;
   }
 
   #publications{
@@ -130,9 +138,6 @@
     overflow-x: hidden;
   }
 
-  #homePage{
-      height: 80vh;
-    }
 
   .grid{
     position: relative;
