@@ -82,6 +82,7 @@
 
   #homePage img{
     top:50%;
+    max-height: 37%;
   }
 
   #homePage #motto{
@@ -128,6 +129,15 @@
   }
   .navbar-text{
     display: none;
+  }
+
+  #homePage{
+    height: 90vh;
+  }
+
+  #homePage img{
+    top:50%;
+    max-height: 37%;
   }
 
 }
