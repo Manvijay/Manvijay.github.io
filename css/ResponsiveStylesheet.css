@@ -138,6 +138,9 @@
     overflow-x: hidden;
   }
 
+  .dots{
+    display: none;
+  }
 
   .grid{
     position: relative;
