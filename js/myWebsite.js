@@ -107,7 +107,6 @@ function scrollToProjects(){
 }
 
 
-
 /*
   $('html,body').animate({ scrollTop: $("#projects").offset().top}, 'slow');
 /* How to get relative position of an element to a div*/
