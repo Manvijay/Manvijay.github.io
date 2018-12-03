@@ -1,17 +1,13 @@
-console.log("script active");
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+console.log("script active: "+w+"  "+h);
 var dots=document.getElementsByClassName("dot");
 arrowElement= document.getElementsByClassName("bouncingArrow")[0];
-//DOM elements and yheirbounding rectangles
-projectDiv= document.getElementById("projects");
-projectDivBound=projectDiv.getBoundingClientRect();
-homePageDiv=document.getElementById("homePage");
-homePageDivBound= homePageDiv.getBoundingClientRect();
-publicationsDiv=document.getElementById("publications");
-publicationsDivBound= publicationsDiv.getBoundingClientRect();
-aboutMeDiv=document.getElementById("aboutMe");
-aboutMeDivBound= aboutMeDiv.getBoundingClientRect();
-socialDiv=document.getElementById("social");
-socialDivBound= socialDiv.getBoundingClientRect();
+
+//DOM elements
+var projectDiv,projectDivBound,projectDivBottom,homePageDiv,homePageDivBound,homePageDivBottom,publicationsDiv,
+publicationsDivBound,publicationsDivBottom,aboutMeDiv,aboutMeDivBound,aboutMeDivBottom,socialDiv,socialDivBound,
+socialDivBottom;
 
 //references to the anchor tags on top navigation bar
 homeAnchor=document.getElementsByClassName("homeAnchor")[0];
@@ -24,15 +20,34 @@ topNavAnchors=document.getElementsByClassName("nav-link");
 threeFifthOfViewPort= 0.6*window.innerHeight || 0.6*document.documentElement.clientHeight; //60% of viewport height
 oneFifthOfViewPort= 0.2*window.innerHeight || 0.2*document.documentElement.clientHeight; //20% of viewport height
 
-window.onbeforeunload = function() {window.scrollTo(0,0);}
+window.onbeforeunload = function(){}// {window.scrollTo(0,0);}
 //called when the page loads
 window.onload = function() {
+  window.scrollTo(0,0);
+  console.log("offset on load: "+window.pageYOffset);
+
+  //DOM elements and their bounding rectangles
+  projectDiv= document.getElementById("projects");
+  projectDivBound=projectDiv.getBoundingClientRect();
+  projectDivBottom=projectDivBound.bottom;
+  homePageDiv=document.getElementById("homePage");
+  homePageDivBound= homePageDiv.getBoundingClientRect();
+  homePageDivBottom=homePageDivBound.bottom;
+  publicationsDiv=document.getElementById("publications");
+  publicationsDivBound= publicationsDiv.getBoundingClientRect();
+  publicationsDivBottom= publicationsDivBound.bottom;
+  aboutMeDiv=document.getElementById("aboutMe");
+  aboutMeDivBound= aboutMeDiv.getBoundingClientRect();
+  aboutMeDivBottom=aboutMeDivBound.bottom;
+  socialDiv=document.getElementById("social");
+  socialDivBound= socialDiv.getBoundingClientRect();
+  socialDivBottom= socialDivBound.bottom;
+
   checkForActiveDiv();
 };
 
 //called when page is scrolled
 window.addEventListener('scroll',function(e){
-  console.log(document.documentElement.clientWidth);
   if(document.documentElement.scrollTop>150){
     arrowElement.style.display="none";
   }
@@ -45,42 +60,34 @@ window.addEventListener('scroll',function(e){
 
 //check for active page in the viewport
 function checkForActiveDiv(){
-  if (homePageDivBound.bottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort)) {
+  if (homePageDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort)) {
       setOpacityOfDots(0)
       setAnchorBackground(0);
-      console.log('In the viewport!'+' top:'+homePageDivBound.top+' bottom:'+homePageDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
+
   }
-  else if (projectDivBound.bottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
+  else if (projectDivBottom>= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
     setOpacityOfDots(1)
     setAnchorBackground(1);
-    console.log('In the viewport!'+' top:'+projectDivBound.top+' bottom:'+projectDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
 
   }
-  else if (publicationsDivBound.bottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
+  else if (publicationsDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
     setOpacityOfDots(2)
     setAnchorBackground(2);
-    console.log('In the viewport!'+' top:'+publicationsDivBound.top+' bottom:'+publicationsDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
 
   }
-  else if (aboutMeDivBound.bottom >= (window.innerHeight+window.pageYOffset-oneFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-oneFifthOfViewPort))
+  else if (aboutMeDivBottom >= (window.innerHeight+window.pageYOffset-oneFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-oneFifthOfViewPort))
   {
     setOpacityOfDots(3);
     setAnchorBackground(3);
-    console.log('In the viewport!'+' top:'+aboutMeDivBound.top+' bottom:'+aboutMeDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
 
   }
   else {
     setOpacityOfDots(4)
     setAnchorBackground(4);
-    console.log('iiiiIn the viewport!'+' top:'+homePageDivBound.top+' bottom:'+homePageDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
 
-    console.log('social bottom:'+socialDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
-    	//console.log('Not in the viewport... whomp whomp'+' top:'+homePageDivBound.top+' bottom:'+homePageDivBound.bottom+' bottom with offset:'+(window.innerHeight+window.pageYOffset));
   }
-
-
 }
 
 //sets the background of anchor tag whose associated div is visible in the viewport
@@ -103,6 +110,7 @@ function setOpacityOfDots(a){
 
 function scrollToProjects(){
   console.log("inside scrollToProjects");
+  //window.scrollTo(680,680);
   projectDiv.scrollIntoView();
 }
 
@@ -110,12 +118,24 @@ function scrollToProjects(){
 /*
   $('html,body').animate({ scrollTop: $("#projects").offset().top}, 'slow');
 /* How to get relative position of an element to a div*/
+
 /*
 function offset(el) {
     var rect = el.getBoundingClientRect();
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return ("top: "+Math.round(rect.top + scrollTop) +" left: "+ Math.round(rect.left + scrollLeft))
-
 }
+
+//for logging all the elements whose width is more than screen width
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 */
