@@ -94,7 +94,9 @@ function checkForActiveDiv(){
 function setAnchorBackground(a){
   for(var i=0;i<=4;i++)
   {
-    if(i==a) topNavAnchors[i].style.color="#fafafa";
+    if(i==a) {
+      topNavAnchors[i].style.color="#fafafa";
+    }
     else topNavAnchors[i].style.color="grey";
   }
 }
