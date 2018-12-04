@@ -1,4 +1,9 @@
 @media screen and (max-width:1109px){
+  #titleProjects{
+    margin-bottom: 14vh;
+    width: 100%;
+  }
+
   .grid{
     position: relative;
     top:10%;
@@ -141,7 +146,7 @@
   }
 
   .moreProjects{
-    margin-top:40px;
+    margin-top:1vh;
   }
 
 }
