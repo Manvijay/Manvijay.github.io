@@ -121,12 +121,11 @@ ul,li{
 
 .grid{
   position: relative;
-  top:10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1vw;
-  grid-row-gap: 1vh;
-  padding-bottom: 5px;
+  grid-row-gap: 5px;
+  padding-bottom: 10px;
 }
 
 .card{
