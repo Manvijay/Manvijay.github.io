@@ -126,13 +126,13 @@ ul,li{
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1vw;
   grid-row-gap: 1vh;
-  padding-bottom: 4vh;
+  padding-bottom: 5px;
 }
 
 .card{
   position:relative;
   top: 0;
-  height: 50vh;
+  height: 65vh;
   margin-top: 8vh;
   margin-bottom: 4vh;
   text-align: center;
@@ -185,7 +185,7 @@ ul,li{
 
 
 #titleProjects{
-  margin-bottom: 13vh;
+  margin-bottom: 7vh;
   width: 100%;
 }
 
