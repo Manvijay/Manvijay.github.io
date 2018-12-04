@@ -18,13 +18,12 @@ body,.wrapper{
 a{
     text-decoration: none;
     color:#636363;
-    transition: background 2s;
+    transition: color 1s;
 }
 
 a:hover{
     text-decoration: none;
     color:inherit;
-    background: white;
 }
 
 
@@ -107,6 +106,7 @@ ul,li{
   display: block;
   margin-bottom: 20px;
   opacity: 0.3;
+  transition: opacity 0.5s;
 }
 
 
