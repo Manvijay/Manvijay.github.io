@@ -131,7 +131,7 @@ ul,li{
 .card{
   position:relative;
   top: 0;
-  height: 65vh;
+  height: 55vh;
   margin-top: 8vh;
   margin-bottom: 4vh;
   text-align: center;
@@ -176,7 +176,7 @@ ul,li{
 
 #projectBrief{
   display:flex;
-  align-items:stretch;
+  align-items:center;
   justify-content: center;
   font-size: 0.8em;
   color: grey;

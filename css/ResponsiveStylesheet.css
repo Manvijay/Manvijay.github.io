@@ -13,7 +13,7 @@
 
   .card{
     position:relative;
-    height: 60vh;
+    height: 55vh;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -170,7 +170,7 @@
 
   .card{
     position:relative;
-    height: 60vh;
+    height: 50vh;
     text-align: center;
     padding: 0px 0px;
     margin: 15px 2px;
@@ -261,6 +261,7 @@
 @media screen and (max-width:430px){
 
   #projectBrief{
+    padding:3px 5px;
     font-size: 0.58em;
   }
 
