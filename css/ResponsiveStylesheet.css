@@ -1,8 +1,4 @@
 @media screen and (max-width:1109px){
-  #titleProjects{
-    margin-bottom: 14vh;
-    width: 100%;
-  }
 
   .grid{
     position: relative;
@@ -14,7 +10,6 @@
   .card{
     position:relative;
     height: 55vh;
-    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -141,10 +136,6 @@
     max-height: 37%;
   }
 
-  .moreProjects{
-    margin-top:1vh;
-  }
-
 }
 
 @media screen and (max-width:550px){
@@ -165,7 +156,6 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 1px;
-    margin-top:8vh;
   }
 
   .card{

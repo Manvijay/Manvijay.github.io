@@ -5,7 +5,6 @@ $('a[href*="#"]')
   .not('[href="#0"]')
   .click(function(event) {
 
-    console.log("swagat nahin karoge hamara?");
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')

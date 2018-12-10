@@ -10,7 +10,7 @@ html{
   margin: 0;
 }
 
-body,.wrapper{
+body,.wrapper, h2{
   margin: 0;
   padding: 0;
 }
@@ -32,6 +32,7 @@ ul,li{
   margin: 0px;
 }
 
+
 .navbar{
   position: sticky;
   top: 0;
@@ -39,6 +40,8 @@ ul,li{
   font-size: 0.8em;
   background: black;
   opacity: 1;
+  padding: 0px !important;
+  margin: 0px !important
 }
 
 
@@ -48,7 +51,7 @@ ul,li{
 
 #homePage{
   background: black;
-  height: 94vh;
+  height: 93vh;
   width: 100%;
   position: relative;
   padding-top: 7vh;
@@ -71,7 +74,7 @@ ul,li{
   max-height: 100vh;
   text-align: center;
   color: #AED6F1;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 3.5vw;
   padding: -10px;
   margin: -10px;
@@ -113,10 +116,32 @@ ul,li{
 #projects{
   position: relative;
   width: 100%;
-  height: auto;
   background:url("../projects-background.png");
+  padding-top: 8vh;
   padding-bottom: 10px;
   margin: 0px;
+  overflow: hidden;
+}
+
+#titleProjects{
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 4vw;
+  color: white;
+}
+
+#titleProjects #titleContainer hr{
+  position: relative;
+  background: white;
+  padding: 0px;
+  margin: 0px auto;
+  transition: width 2s;
+  margin-top: 5px;
 }
 
 .grid{
@@ -124,15 +149,14 @@ ul,li{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1vw;
-  grid-row-gap: 5px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card{
   position:relative;
   top: 0;
   height: 55vh;
-  margin-top: 8vh;
   margin-bottom: 4vh;
   text-align: center;
   background: white;
@@ -182,84 +206,41 @@ ul,li{
   color: grey;
 }
 
-
-#titleProjects{
-  margin-bottom: 7vh;
-  width: 100%;
-}
-
-#titleProjects h2.no-span {
-  position: relative;
-  height: 0vh;
-  top: 10vh;
-  left: 50%;
-  transform: translate(-50%);
-  font-family: 'Comfortaa', cursive;
-  font-size: 4vw;
-  color: white;
-  display: table;
-  white-space: nowrap;
-}
-
-#titleProjects h2.no-span:before,
-#titleProjects h2.no-span:after {
-  border-top: 5px solid white;
-  content: "";
-  display: table-cell;
-  position: relative;
-  top: 0.5em;
-  width: 25%;
-}
-
-#titleProjects h2.no-span:before {
-  right: 1.5%;
-}
-
-#titleProjects h2.no-span:after {
-  left: 1.5%;
-}
-
 #publications{
     position:relative;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 8vh;
     padding-bottom: 40px;
+    margin: 0px;
+    overflow: hidden;
     background: #EBEDEF;
 }
 
-#titlePublications h2.no-span {
+#titlePublications {
   position: relative;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 4vw;
-  display: table;
-  white-space: nowrap;
-  height: 0vh;
-  top: 5vh;
-  left: 50%;
-  transform: translate(-50%);
+  color: black;
 }
 
-#titlePublications h2.no-span:before,
-#titlePublications h2.no-span:after {
-  border-top: 5px solid black;
-  content: "";
-  display: table-cell;
+#titlePublications #titleContainer hr{
   position: relative;
-  top: 0.5em;
-  width: 25%;
-}
-
-#titlePublications h2.no-span:before {
-  right: 1.5%;
-}
-
-#titlePublications h2.no-span:after {
-  left: 1.5%;
+  background: black;
+  padding: 0px;
+  margin: 0px auto;
+  margin-top: 5px;
+  transition: width 2s
 }
 
 #publicationsBody{
   position: relative;
   margin-top: 4vh;
-  height:60vh;
+  min-height:60vh;
 }
 
 #publicationsBody .col1{
@@ -439,4 +420,10 @@ footer .logo{
   50% {bottom: 5px;opacity:0.4}
   75% {bottom: 2px;opacity:0.4}
   100% {bottom: 0px;opacity:1}
+}
+
+@keyframes titleBottomLine {
+  0% {padding: 10px}
+  50% {padding: 5px}
+  100% {padding: 0px}
 }

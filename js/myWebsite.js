@@ -2,11 +2,13 @@ var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 console.log("script active: "+w+"  "+h);
 var dots=document.getElementsByClassName("dot");
-arrowElement= document.getElementsByClassName("bouncingArrow")[0];
+var arrowElement= document.getElementsByClassName("bouncingArrow")[0];
+var titleContainerHrProj= document.getElementById("titleProjects").getElementsByTagName("hr")[0];
+var titleContainerHrPub= document.getElementById("titlePublications").getElementsByTagName("hr")[0];
 
 //DOM elements
-var projectDiv,projectDivBound,projectDivBottom,homePageDiv,homePageDivBound,homePageDivBottom,publicationsDiv,
-publicationsDivBound,publicationsDivBottom,aboutMeDiv,aboutMeDivBound,aboutMeDivBottom,socialDiv,socialDivBound,
+var projectDiv,projectDivBound,projectDivBottom,titleContainerHrProj,homePageDiv,homePageDivBound,homePageDivBottom,publicationsDiv,
+publicationsDivBound,publicationsDivBottom,titleContainerHrPub,aboutMeDiv,aboutMeDivBound,aboutMeDivBottom,socialDiv,socialDivBound,
 socialDivBottom;
 
 //references to the anchor tags on top navigation bar
@@ -24,7 +26,7 @@ window.onbeforeunload = function(){}// {window.scrollTo(0,0);}
 //called when the page loads
 window.onload = function() {
   window.scrollTo(0,0);
-  console.log("offset on load: "+window.pageYOffset);
+  //console.log("offset on load: "+window.pageYOffset);
 
   //DOM elements and their bounding rectangles
   projectDiv= document.getElementById("projects");
@@ -61,43 +63,65 @@ window.addEventListener('scroll',function(e){
 //check for active page in the viewport
 function checkForActiveDiv(){
   if (homePageDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort)) {
-      setOpacityOfDots(0)
+      setOpacityOfDots(0);
       setAnchorBackground(0);
-
+      setTitleUnderline(0);
   }
   else if (projectDivBottom>= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
-    setOpacityOfDots(1)
+    setOpacityOfDots(1);
     setAnchorBackground(1);
-
+    setTitleUnderline(1);
   }
   else if (publicationsDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
-    setOpacityOfDots(2)
+    setOpacityOfDots(2);
     setAnchorBackground(2);
-
+    setTitleUnderline(2);
   }
   else if (aboutMeDivBottom >= (window.innerHeight+window.pageYOffset-oneFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-oneFifthOfViewPort))
   {
     setOpacityOfDots(3);
     setAnchorBackground(3);
-
+    setTitleUnderline(3);
   }
   else {
-    setOpacityOfDots(4)
+    setOpacityOfDots(4);
     setAnchorBackground(4);
+    setTitleUnderline(4);
+  }
+}
 
+
+function setTitleUnderline(index){
+
+  if(index==1){
+    titleContainerHrProj.style.width="50%";
+    titleContainerHrPub.style.width="5px";
+  }
+  else if(index==2){
+    titleContainerHrPub.style.width="50%";
+    titleContainerHrProj.style.width="5px";
+  }
+  else {
+    titleContainerHrProj.style.width="5px";
+    titleContainerHrPub.style.width="5px";
   }
 }
 
 //sets the background of anchor tag whose associated div is visible in the viewport
 function setAnchorBackground(a){
-  for(var i=0;i<=4;i++)
+  for(var i=0;i<=5;i++)
   {
     if(i==a) {
       topNavAnchors[i].style.color="#fafafa";
+      topNavAnchors[i].style.borderTop="1px white solid";
     }
-    else topNavAnchors[i].style.color="grey";
+    else{
+      topNavAnchors[i].style.color="grey";
+      topNavAnchors[i].style.borderTop="none";
+    }
+
   }
 }
 
@@ -111,7 +135,7 @@ function setOpacityOfDots(a){
 }
 
 function scrollToProjects(){
-  console.log("inside scrollToProjects");
+  //console.log("inside scrollToProjects");
   //window.scrollTo(680,680);
   projectDiv.scrollIntoView();
 }
