@@ -35,6 +35,8 @@ ul,li{
 
 .navbar{
   position: sticky;
+  position: -webkit-sticky;
+  position: -ms-sticky;
   top: 0;
   z-index: 10;
   font-size: 0.8em;
@@ -55,7 +57,6 @@ ul,li{
   width: 100%;
   position: relative;
   padding-top: 7vh;
-  overflow-x: hidden;
 }
 
 #homePage img{
@@ -79,6 +80,23 @@ ul,li{
   padding: -10px;
   margin: -10px;
 }
+
+.dotMotto1{
+  position: absolute;
+  animation: liftDot1 5s infinite;
+}
+
+.dotMotto2{
+  position: absolute;
+  animation: liftDot2 5s infinite;
+}
+
+.dotMotto3{
+  position: absolute;
+  animation: liftDot3 5s infinite;
+}
+
+
 
 .bouncingArrow{
   width: 100%;
@@ -364,6 +382,7 @@ ul,li{
 }
 
 #social{
+  position: relative;
   height: 15vh;
   line-height: 15vh;
   background:black;
@@ -378,7 +397,7 @@ ul,li{
 }
 
 #social a:hover{
-  color: white;
+  animation: changeColor 5s infinite ease-in;
 }
 
 footer{
@@ -422,8 +441,44 @@ footer .logo{
   100% {bottom: 0px;opacity:1}
 }
 
-@keyframes titleBottomLine {
-  0% {padding: 10px}
-  50% {padding: 5px}
-  100% {padding: 0px}
+@keyframes liftDot1 {
+  0% {bottom: 0px}
+  14% {bottom: 15px}
+  28% {bottom: 0px}
+  42% {bottom: 0px}
+  56% {bottom: 15px}
+  70% {bottom: 0px}
+  84% {bottom: 0px}
+  100% {bottom: 0px}
+}
+
+@keyframes liftDot2 {
+  0% {bottom: 0px}
+  14% {bottom: 0px}
+  28% {bottom: 15px}
+  42% {bottom: 0px}
+  56% {bottom: 0px}
+  70% {bottom: 15px}
+  84% {bottom: 0px}
+  100% {bottom: 0px}
+}
+
+@keyframes liftDot3 {
+  0% {bottom: 0px}
+  14% {bottom: 0px}
+  28% {bottom: 0px}
+  42% {bottom: 15px}
+  56% {bottom: 0px}
+  70% {bottom: 0px}
+  84% {bottom: 15px}
+  100% {bottom: 0px}
+}
+
+@keyframes changeColor {
+  0% {color: white}
+  20% {color:  yellow}
+  40% {color:  red }
+  60% {color:  #dc7633}
+  80% {color:  #2ecc71 }
+  100% {color: white}
 }
