@@ -398,7 +398,7 @@ ul,li{
 }
 
 #social a:hover{
-  animation: changeColor 10s infinite ease-in-out;
+  animation: changeColor 3s infinite ease-in-out;
 }
 
 footer{
