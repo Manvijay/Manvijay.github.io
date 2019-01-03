@@ -483,9 +483,6 @@ footer .logo{
 
 @keyframes changeColor {
   0% {color: white}
-  20% {color:  #A60100}
-  40% {color:  #F4F143}
-  60% {color:  #F22A2F}
-  80% {color:  #0E7DBF}
+  50% {color:  #0E7DBF}
   100% {color: white}
 }
