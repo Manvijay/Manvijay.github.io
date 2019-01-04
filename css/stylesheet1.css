@@ -388,6 +388,41 @@ transform: scale(1.08);
   padding: 5px 5px;
 }
 
+#resume{
+  position: relative;
+  min-height: 15vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume button{
+  background:black;
+  color: white;
+  border: 1px solid #2D9AED;
+  z-index: 10;
+  transition: background 0.5s linear;
+}
+
+#resume span{
+  max-width: 0;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+#resume button:hover{
+  background: #2D9AED;
+}
+
+#resume button:hover span{
+  max-width: 1rem;
+}
+
+
 #social{
   position: relative;
   height: 15vh;
@@ -397,6 +432,7 @@ transform: scale(1.08);
   text-align: center;
   font-size: 2.5em;
   overflow: hidden;
+  border-top: 2px solid #2D9AED;
 }
 
 #social a{
@@ -483,6 +519,6 @@ footer .logo{
 
 @keyframes changeColor {
   0% {color: white}
-  50% {color:  #0E7DBF}
+  50% {color:  grey}
   100% {color: white}
 }

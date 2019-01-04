@@ -64,30 +64,30 @@ window.addEventListener('scroll',function(e){
 function checkForActiveDiv(){
   if (homePageDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort)) {
       setOpacityOfDots(0);
-      setAnchorBackground(0);
+      setAnchorColor(0);
       setTitleUnderline(0);
   }
   else if (projectDivBottom>= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
     setOpacityOfDots(1);
-    setAnchorBackground(1);
+    setAnchorColor(1);
     setTitleUnderline(1);
   }
   else if (publicationsDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
     setOpacityOfDots(2);
-    setAnchorBackground(2);
+    setAnchorColor(2);
     setTitleUnderline(2);
   }
   else if (aboutMeDivBottom >= (window.innerHeight+window.pageYOffset-oneFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-oneFifthOfViewPort))
   {
     setOpacityOfDots(3);
-    setAnchorBackground(3);
+    setAnchorColor(3);
     setTitleUnderline(3);
   }
   else {
     setOpacityOfDots(4);
-    setAnchorBackground(4);
+    setAnchorColor(4);
     setTitleUnderline(4);
   }
 }
@@ -110,8 +110,8 @@ function setTitleUnderline(index){
 }
 
 //sets the background of anchor tag whose associated div is visible in the viewport
-function setAnchorBackground(a){
-  for(var i=0;i<=5;i++)
+function setAnchorColor(a){
+  for(var i=0;i<=4;i++)
   {
     if(i==a) {
       topNavAnchors[i].style.color="#fafafa";
