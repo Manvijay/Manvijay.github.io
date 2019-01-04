@@ -225,6 +225,35 @@ ul,li{
   color: grey;
 }
 
+#projectButton button{
+  background:black;
+  color: black;
+  background: #fafafa;
+  z-index: 10;
+  transition: background 0.5s linear;
+}
+
+#projectButton span{
+  max-width: 0;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s, padding-left 0.5s;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+#projectButton button:hover{
+  border: 1px solid black;
+  background: black;
+  color: white;
+  z-index: 100;
+}
+
+#projectButton button:hover span{
+  max-width: 10rem;
+  padding-left: 15px;
+}
+
 #publications{
     position:relative;
     width: 100%;
