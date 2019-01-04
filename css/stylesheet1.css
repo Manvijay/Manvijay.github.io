@@ -400,11 +400,13 @@ transform: scale(1.08);
 }
 
 #social a{
-  color: #dadada;
+  color:#2D9AED;
+  z-index: 10;
 }
 
 #social a:hover{
-  animation: changeColor 3s infinite ease-in-out;
+  color: #fafafa;
+  z-index: 100;
 }
 
 #resume{
@@ -418,8 +420,8 @@ transform: scale(1.08);
 
 #resume button{
   background:black;
-  color: white;
-  border: 1px solid #2D9AED;
+  color: black;
+  background: #2D9AED;
   z-index: 10;
   transition: background 0.5s linear;
 }
@@ -434,7 +436,10 @@ transform: scale(1.08);
 }
 
 #resume button:hover{
-  background: #2D9AED;
+  border: 1px solid #2D9AED;
+  background: black;
+  color:#fafafa;
+  z-index: 100;
 }
 
 #resume button:hover span{
@@ -517,6 +522,6 @@ footer .logo{
 
 @keyframes changeColor {
   0% {color: #2D9AED}
-  50% {color:  #fafafa}
+  50% {color:  grey}
   100% {color: #2D9AED}
 }
