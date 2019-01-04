@@ -388,6 +388,25 @@ transform: scale(1.08);
   padding: 5px 5px;
 }
 
+#social{
+  position: relative;
+  height: 15vh;
+  line-height: 15vh;
+  background:black;
+  text-align: center;
+  font-size: 2.5em;
+  overflow: hidden;
+  border-top: 2px solid #2D9AED;
+}
+
+#social a{
+  color: #dadada;
+}
+
+#social a:hover{
+  animation: changeColor 3s infinite ease-in-out;
+}
+
 #resume{
   position: relative;
   min-height: 15vh;
@@ -420,27 +439,6 @@ transform: scale(1.08);
 
 #resume button:hover span{
   max-width: 1rem;
-}
-
-
-#social{
-  position: relative;
-  height: 15vh;
-  line-height: 15vh;
-  background:black;
-  color: #2D9AED;
-  text-align: center;
-  font-size: 2.5em;
-  overflow: hidden;
-  border-top: 2px solid #2D9AED;
-}
-
-#social a{
-  color: #2D9AED;
-}
-
-#social a:hover{
-  animation: changeColor 3s infinite ease-in-out;
 }
 
 footer{
@@ -518,7 +516,7 @@ footer .logo{
 }
 
 @keyframes changeColor {
-  0% {color: white}
-  50% {color:  grey}
-  100% {color: white}
+  0% {color: #2D9AED}
+  50% {color:  #fafafa}
+  100% {color: #2D9AED}
 }
