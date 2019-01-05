@@ -83,7 +83,7 @@ ul,li{
 }
 
 .dotMotto1{
-  position: absolute;
+  position: absolute; 
   animation: liftDot1 5s infinite;
 }
 

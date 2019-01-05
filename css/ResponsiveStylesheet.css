@@ -250,6 +250,10 @@
 
 @media screen and (max-width:430px){
 
+  #homePage #motto{
+    font-size: 5.5vw;
+  }
+
   #projectBrief{
     padding:3px 5px;
     font-size: 0.58em;
