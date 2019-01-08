@@ -83,7 +83,7 @@ ul,li{
 }
 
 .dotMotto1{
-  position: absolute; 
+  position: absolute;
   animation: liftDot1 5s infinite;
 }
 
@@ -419,8 +419,7 @@ transform: scale(1.08);
 
 #social{
   position: relative;
-  height: 15vh;
-  line-height: 15vh;
+  padding-top: 7vh;
   background:black;
   text-align: center;
   font-size: 2.5em;
