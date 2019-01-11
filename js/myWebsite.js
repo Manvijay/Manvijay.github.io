@@ -72,23 +72,27 @@ function checkForActiveDiv(){
     setOpacityOfDots(1);
     setAnchorColor(1);
     setTitleUnderline(1);
+    document.title="Manvijay | Projects";
   }
   else if (publicationsDivBottom >= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
     setOpacityOfDots(2);
     setAnchorColor(2);
     setTitleUnderline(2);
+    document.title="Manvijay | Publications";
   }
   else if (aboutMeDivBottom >= (window.innerHeight+window.pageYOffset-oneFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-oneFifthOfViewPort))
   {
     setOpacityOfDots(3);
     setAnchorColor(3);
     setTitleUnderline(3);
+    document.title="Manvijay | Glory Glory Manchester United";
   }
   else {
     setOpacityOfDots(4);
     setAnchorColor(4);
     setTitleUnderline(4);
+    document.title="Manvijay | Shoot an e-mail!";
   }
 }
 
