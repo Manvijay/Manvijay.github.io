@@ -1,28 +1,31 @@
 .resumePage{
   width: 100%;
   min-height: 100vh;
-  background:url("../projects-background.png");
-  background-attachment: fixed;
+  background:black;
   margin: auto;
-  padding-top: 7vh;
+  padding-top: 15vh;
   text-align: center;
 }
 
 .row{
   margin-top: 7vh;
-  column-gap: 1vw;
 }
 
 .card{
   position: relative;
-  background: #fafafa;
-  margin-bottom: 20px;
+  background:url("../projects-background.png");
+  background-attachment: fixed;
+  margin: 0px 1vw 20px 1vw;
 }
 
+.card-title{
+  color: white;
+}
 
 .btn{
   color: black;
   background: #fafafa;
+  border: none;
   z-index: 10;
   transition: background 0.3s linear;
 }
@@ -34,6 +37,10 @@ p{
 }
 
 @media screen and (max-width:550){
+  .resumePage{
+    padding-top: 7vh;
+  }
+
   p{
     font-size: 0.6em;
   }
