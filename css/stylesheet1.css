@@ -502,7 +502,7 @@ transform: scale(1.08);
 }
 
 #resume button:hover span{
-  max-width: 1rem;
+  max-width: 5rem;
 }
 
 footer{
