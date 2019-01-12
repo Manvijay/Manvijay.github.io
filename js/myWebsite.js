@@ -66,6 +66,7 @@ function checkForActiveDiv(){
       setOpacityOfDots(0);
       setAnchorColor(0);
       setTitleUnderline(0);
+      document.title="Manvijay | Home";
   }
   else if (projectDivBottom>= (window.innerHeight+window.pageYOffset-threeFifthOfViewPort || document.documentElement.clientHeight+window.pageYOffset-threeFifthOfViewPort))
   {
