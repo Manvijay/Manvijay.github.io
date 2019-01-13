@@ -39,7 +39,7 @@ ul,li{
   position: -webkit-sticky;
   position: -ms-sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   font-size: 0.8em;
   background: black;
   opacity: 1;
@@ -147,7 +147,7 @@ ul,li{
     left: 10px;
     top: 50vh;
     transform: translateY(-50%);
-    z-index: 10000;
+    z-index: 100;
 }
 
 .dot {
@@ -260,7 +260,7 @@ ul,li{
 #projectButton button{
   color: black;
   background: #fafafa;
-  z-index: 10;
+  z-index: 2;
   transition: background 0.2s linear;
 }
 
@@ -277,7 +277,7 @@ ul,li{
   border: 1px solid black;
   background: black;
   color: white;
-  z-index: 100;
+  z-index: 10;
 }
 
 #projectButton button:hover span{
@@ -399,7 +399,7 @@ transform: scale(1.08);
   color:white;
   margin: 0px;
   padding: 0px;
-  z-index: 10;
+  z-index: 2;
 }
 
 #aboutMeHeader #Name h1{
@@ -461,12 +461,12 @@ transform: scale(1.08);
 
 #social a{
   color:#2D9AED;
-  z-index: 10;
+  z-index: 2;
 }
 
 #social a:hover{
   color: #fafafa;
-  z-index: 100;
+  z-index: 10;
 }
 
 #resume{
@@ -499,7 +499,7 @@ transform: scale(1.08);
   border: 1px solid #2D9AED;
   background: black;
   color:#fafafa;
-  z-index: 100;
+  z-index: 15;
 }
 
 #resume button:hover span{
