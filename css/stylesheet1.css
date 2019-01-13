@@ -285,7 +285,7 @@ ul,li{
   padding-left: 15px;
 }
 
-#publications{
+#s{
     position:relative;
     width: 100%;
     padding-top: 8vh;
@@ -295,7 +295,7 @@ ul,li{
     background: #EBEDEF;
 }
 
-#titlePublications {
+#titles {
   position: relative;
   width: 100%;
   min-height: 10vh;
