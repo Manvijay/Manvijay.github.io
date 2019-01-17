@@ -251,10 +251,29 @@ ul,li{
 
 #projectBrief{
   display:flex;
+  text-align: left;
   align-items:center;
   justify-content: center;
   font-size: 0.8em;
   color: grey;
+}
+
+.languageIcons p{
+    text-align: center;
+}
+
+.languageIcons span, .languageIcons i{
+    display: inline-block;
+    color: orange;
+    margin:auto 5px;
+}
+
+.languageIcons span{
+  font-family: "Time new roman";
+}
+
+.languageIcons span:hover, .languageIcons i:hover{
+  transform: scale3d(1.5,1.5,10);
 }
 
 #projectButton button{
@@ -505,6 +524,7 @@ transform: scale(1.08);
 #resume button:hover span{
   max-width: 5rem;
 }
+
 
 footer{
   position: relative;

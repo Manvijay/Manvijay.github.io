@@ -25,7 +25,7 @@ oneFifthOfViewPort= 0.2*window.innerHeight || 0.2*document.documentElement.clien
 window.onbeforeunload = function(){}// {window.scrollTo(0,0);}
 //called when the page loads
 window.onload = function() {
-  window.scrollTo(0,0);
+  //window.scrollTo(0,0);
   //console.log("offset on load: "+window.pageYOffset);
 
   //DOM elements and their bounding rectangles
