@@ -258,24 +258,6 @@ ul,li{
   color: grey;
 }
 
-.languageIcons p{
-    text-align: center;
-}
-
-.languageIcons span, .languageIcons i{
-    display: inline-block;
-    color: orange;
-    margin:auto 5px;
-}
-
-.languageIcons span{
-  font-family: "Time new roman";
-}
-
-.languageIcons span:hover, .languageIcons i:hover{
-  transform: scale3d(1.5,1.5,10);
-}
-
 #projectButton button{
   color: black;
   background: #fafafa;
@@ -302,6 +284,25 @@ ul,li{
 #projectButton button:hover span{
   max-width: 10rem;
   padding-left: 15px;
+}
+
+.languageIcons p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.languageIcons span, .languageIcons i{
+    display: inline-block;
+    color: #fafafa;
+    margin:auto 5px;
+}
+
+.languageIcons span{
+  font-family: "Time new roman";
+}
+
+.languageIcons span:hover, .languageIcons i:hover{
+  transform: scale3d(1.5,1.5,10);
 }
 
 #publications{

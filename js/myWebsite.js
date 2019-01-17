@@ -145,6 +145,10 @@ function scrollToProjects(){
   projectDiv.scrollIntoView();
 }
 
+function alertPrivateRepo(){
+  window.alert("It's a private repository. If you want to know more about this project then please email me at manvijay@buffalo.edu .")
+}
+
 
 /*
   $('html,body').animate({ scrollTop: $("#projects").offset().top}, 'slow');
